@@ -1,0 +1,14 @@
+2014-01-21:
+	* Updated the language definition files.
+	* Fixed a bug with the ampersand symbol in a journal title.
+	* Fixed a bug with user-entered periods with no following space character.
+2010-08-19:
+	* Added support for diacritic marks in abbreviations.
+	* Added a global installation script for Unix systems.
+	* Fixed a bug where already abbreviated words could end up having two periods.
+	* Added support for "partial abbreviations" (matching the beginning of a title word).
+	* Fixed an issue where additional spaces are sometimes inserted between abbreviations.
+	* The language definition files are no-longer incompatible with the "inputenc" package (required by LyX).
+2010-08-16:
+	* First public release.
+
