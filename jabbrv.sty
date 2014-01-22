@@ -426,17 +426,11 @@
 	\egroup \expandafter\@jrnl@eat@period\bgroup%
 }
 
-% Check if string #1 is in string #2
-% From https://tex.stackexchange.com/questions/26870/check-if-a-string-contains-a-given-character
-\def\instring#1#2{TT\fi\begingroup
-  \edef\x{\endgroup\noexpand\in@{#1}{#2}}\x\ifin@}
-
 % Call \journal{<title>}, where <title> is the title for which
 % journal abbreviation replacements should be performed.
 \providecommand{\JournalTitle}[1]{%
 	\@abbreviate@journal@true%
 	\@end@period@false%
-	% This group does journal exception abbreviations
 	\begingroup%
 		\jabbrv@redefine@diacritic%
 		\edef\journal@fulltitle{#1}%
@@ -445,21 +439,16 @@
 			\global\@abbreviate@journal@false%
 		\fi%
 	\endgroup%
-	% This group does automatic abbreviation. First check if there are multiple words.
-	\if\instring{ }{#1}%
-		\if@abbreviate@journal@%
-			\begingroup%
-				\@gobble@space@true%
-				\@special@period@false%
-				\jabbrv@redefine@diacritic%
-				\expandafter\journal@char@loop%
-					#1%
-				\journal@char@stop%
-			\endgroup%
-		\fi%
-	\else
-		#1%
-	\fi
+	\if@abbreviate@journal@%
+		\begingroup%
+			\@gobble@space@true%
+			\@special@period@false%
+			\jabbrv@redefine@diacritic%
+			\expandafter\journal@char@loop%
+				#1%
+			\journal@char@stop%
+		\endgroup%
+	\fi%
 	% If the next character is not a period then add one in
 	% if the last character would have been a period
 	\@jrnl@eat@period@groupskip%
