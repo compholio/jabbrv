@@ -457,12 +457,12 @@
 				\journal@char@stop%
 			\endgroup%
 		\fi%
+		% If the next character is not a period then add one in
+		% if the last character would have been a period
+		\@jrnl@eat@period@groupskip%
 	\else
 		#1%
 	\fi
-	% If the next character is not a period then add one in
-	% if the last character would have been a period
-	\@jrnl@eat@period@groupskip%
 }
 
 % Declare an option for disabling periods
