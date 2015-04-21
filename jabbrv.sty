@@ -23,6 +23,12 @@
 %% abbreviations simply include the package option "noperiod":
 %%   \usepackage[noperiod]{jabbrv}
 %% 
+%% The default behavior of this package is to not abbreviate a
+%% journal title that only contains one word.  You can disable this
+%% behavior (still abbreviate one word titles) by including the
+%% "oneword" package option:
+%%   \usepackage[oneword]{jabbrv}
+%%
 %% This package also ignores undefined abbreviations (does not
 %% abbreviate them) by default.  In order to make sure that all the
 %% words you expect to be abbreviated are actually abbreviated then
@@ -82,6 +88,16 @@
 
 % Special if for handling exceptions to the abbreviation rules
 \newif\if@abbreviate@journal@
+
+% Special if for abbreviating when a title only contains one word
+\newif\if@jabbrv@abbrv@one@word@title@ \@jabbrv@abbrv@one@word@title@false
+\def\jabbrv@one@word@title{%
+	\if@jabbrv@abbrv@one@word@title@%
+		\journal@output@abbrv%
+	\else%
+		\the\temp@journal@text%
+	\fi%
+}
 
 % Special definition for the period so that a double-period doesn't result at the end of the entry
 \newif\if@show@period@ \@show@period@true
@@ -368,12 +384,22 @@
 	\@special@period@false%
 }
 
+% Allow us to keep track of the number of words in an abbreviation so that when there's only one we can choose not to abbreviate
+\newcounter{jabbrv@word@count}
+\def\jabbrv@reset@word@count{%
+	\setcounter{jabbrv@word@count}{0}%
+}
+\def\jabbrv@step@word@count{%
+	\addtocounter{jabbrv@word@count}{1}%
+}
+
 % Loop through the \futurelet characters finding title words to replace
 \def\journal@char@loop@{%
 	% The space character is the ``special token'' - use this character to find
 	% title words to abbreviate
 	\ifx \@sptoken\@jrnl@temp@char%
 		\journal@output@abbrv%
+		\jabbrv@step@word@count%
 		\temp@journal@text{}%
 		\@no@space@false%
 		\let\@tempa\@journal@space%
@@ -390,7 +416,11 @@
 			% \journal@char@stop is specially defined so this routine knows
 			% when the entire text has been read (where to stop)
 			\ifx \journal@char@stop\@jrnl@temp@char%
-				\journal@output@abbrv%
+				\expandafter\ifnum\value{jabbrv@word@count} > 0\relax%
+					\journal@output@abbrv%
+				\else%
+					\jabbrv@one@word@title%
+				\fi%
 				\let\@tempa\@gobble%
 			\else%
 				% Measure all other characters and include them in the title word
@@ -444,6 +474,7 @@
 			\@gobble@space@true%
 			\@special@period@false%
 			\jabbrv@redefine@diacritic%
+			\jabbrv@reset@word@count%
 			\expandafter\journal@char@loop%
 				#1%
 			\journal@char@stop%
@@ -456,6 +487,9 @@
 
 % Declare an option for disabling periods
 \DeclareVoidOption{noperiod}{\@show@period@false}
+
+% Declare an option for disabling periods
+\DeclareVoidOption{oneword}{\@jabbrv@abbrv@one@word@title@true}
 
 % Declare an option for enabling undefined abbreviation warnings
 \DeclareVoidOption{warnundef}{\@warn@noabbrv@true}
