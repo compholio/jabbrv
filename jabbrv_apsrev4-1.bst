@@ -1,4 +1,24 @@
-%%
+% ===============================================================
+% IMPORTANT NOTICE:
+% This bibliographic style (bst) file has been modified by Elie Gouzien with the
+% crucial help from Erich E. Hoover from `apsrev4-1.bst', adapted to the use
+% with it's `jabbrv' package.
+%
+% Applied diff (before adding this notice) is :
+% 2603a2604,2608
+% > FUNCTION {format.journal}
+% > {
+% >   "\protect\JournalTitle{" journal * "}" *
+% > }
+% >
+% 2617c2622
+% <       journal
+% ---
+% >       format.journal
+%
+% The original version is available at
+% https://journals.aps.org/files/revtex/revtex4-1.zip
+% ===============================================================%%
 %% This is file `apsrev4-1.bst',
 %% generated with the docstrip utility.
 %%
