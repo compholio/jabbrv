@@ -96,6 +96,7 @@
 		\journal@output@abbrv%
 	\else%
 		\the\temp@journal@text%
+		\global\@end@period@false%
 	\fi%
 }
 
@@ -479,6 +480,8 @@
 				#1%
 			\journal@char@stop%
 		\endgroup%
+	\else
+		\global\@end@period@false%
 	\fi%
 	% If the next character is not a period then add one in
 	% if the last character would have been a period
