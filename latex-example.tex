@@ -1,7 +1,7 @@
 \documentclass[letterpaper,12pt]{article}
 
 % Remove ``[warnundef]'' to get rid of undefined abbreviation warnings:
-\usepackage[warnundef]{jabbrv}
+\usepackage[warnundef,noperiod]{jabbrv}
 
 % Old-school compressed citations:
 %\usepackage{cite}
@@ -16,9 +16,12 @@
 
 \begin{document}
 
-Test \cite{ref:Test,ref:CmdTest,ref:AbbrvTest,ref:SymbolTest}. \JournalTitle{Briefings in Functional Genomics}.
+Test \cite{ref:TestNoPeriod,ref:Test,ref:TestPeriod,ref:TestPeriodTwoWords,ref:TestPeriodRefInf,ref:TestPeriodInf,
+ref:TestPeriodInfPeriod,ref:CmdTest,ref:AbbrvTest,ref:SymbolTest}.
+\JournalTitle{Briefings in Functional Genomics}.
 
-\bibliographystyle{jabbrv_unsrt} % <-- Note that a custom jabbrv-compatible style is used!
+\bibliographystyle{jabbrv_vancouver} % Need the option noperiod
+%\bibliographystyle{jabbrv_unsrt} % <-- Note that a custom jabbrv-compatible style is used!
 \bibliography{example}
 
 \end{document}
