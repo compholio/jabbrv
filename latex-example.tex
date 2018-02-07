@@ -12,13 +12,16 @@
 \DefineJournalAbbreviation{Test}{Tes} % <-- Note that there is no period!
 
 % Define custom commands used in the BibTeX file:
-\newcommand{\tjri}{Test Journal of \& Reference Information}
+\newcommand{\tjri}{Test Journal of Reference Information}
 
 \begin{document}
 
-Test \cite{ref:Test,ref:CmdTest,ref:AbbrvTest,ref:SymbolTest}. \JournalTitle{Briefings in Functional Genomics}.
+Test \cite{ref:TestNoPeriod,ref:Test,ref:TestPeriod,ref:TestPeriodTwoWords,ref:TestPeriodRefInf,ref:TestPeriodInf,
+ref:TestMyAbbrvOneWord,ref:TestMyAbbrvTwoWords,ref:TestPeriodInfPeriod,ref:CmdTest,ref:AbbrvTest,ref:SymbolTest}.
+\JournalTitle{Briefings in Functional Genomics}.
 
 \bibliographystyle{jabbrv_unsrt} % <-- Note that a custom jabbrv-compatible style is used!
+%\bibliographystyle{jabbrv_vancouver} % Needs the option noperiod
 \bibliography{example}
 
 \end{document}
