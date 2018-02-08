@@ -1,6 +1,7 @@
 @article{ref:TestNoPeriod,
 	author		= {Normal Article Reference},
-	title		= {A one word journal title in first position},
+	title		= {A one word journal title in first position: part {I}},
+	comment = {Notice the use of '{...}' to keep the capitalization},
 	journal		= {OneWord},
 	publisher	= {A. Good Publisher},
 	pages		= {1--1000},
@@ -18,9 +19,19 @@
 	year		= {2010}
 }
 
+@article{ref:TestJabbrv,
+	author		= {Normal Article Reference},
+	title		= {Test journal title already abbreviated in the fist word},
+	journal		= {Phys. Rev. Lett.},
+	publisher	= {A. Good Publisher},
+	pages		= {1--1000},
+	place		= {Golden, Colorado},
+	year		= {2010}
+}
+
 @article{ref:TestPeriod,
 	author		= {Normal Article Reference},
-	title		= {A second one word journal title after another one abbreviated},
+	title		= {A second one word journal title after another one abbreviated: part {II}},
 	journal		= {OneWord},
 	publisher	= {A. Good Publisher},
 	pages		= {1--1000},
@@ -40,7 +51,7 @@
 
 @article{ref:TestPeriodRefInf,
 	author		= {Normal Article Reference},
-	title		= {Journal title entered: ``Reference Information''},
+	title		= {Journal title entered: ``{Reference Information}''},
 	journal		= {Reference Information},
 	publisher	= {A. Good Publisher},
 	pages		= {1--1000},
@@ -50,7 +61,7 @@
 
 @article{ref:TestPeriodInf,
 	author		= {Normal Article Reference},
-	title		= {Journal title entered: ``Information''},
+	title		= {Journal title entered: ``{Information}''},
 	journal		= {Information},
 	publisher	= {A. Good Publisher},
 	pages		= {1--1000},
@@ -80,7 +91,7 @@
 
 @article{ref:TestPeriodInfPeriod,
 	author		= {Normal Article Reference},
-	title		= {With the option oneword, journal title containing a end period are still abbreviated},
+	title		= {With the option oneword, journal title containing a end period are not abbreviated},
 	journal		= {Information.},
 	publisher	= {A. Good Publisher},
 	pages		= {1--1000},
@@ -90,7 +101,7 @@
 
 @article{ref:CmdTest,
 	author		= {Command Article Reference},
-	title		= {Test of the journal title custom command},
+	title		= {Test of the journal title custom command. {J}ournal title entered: ``\textbackslash{}tjri''},
 	journal		= {\tjri},
 	publisher	= {A. Good Publisher},
 	pages		= {1000--1001},
@@ -100,7 +111,7 @@
 
 @article{ref:AbbrvTest,
 	author		= {Abbreviated Article Reference},
-	title		= {Journal title entered: ``Test J. of Reference Inf.''},
+	title		= {Journal title entered: ``{Test J. of Reference Inf.}''},
 	journal		= {Test J. of Reference Inf.},
 	publisher	= {A. Good Publisher},
 	pages		= {1002--1050},

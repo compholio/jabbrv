@@ -404,35 +404,19 @@
 		\@no@space@false%
 		\let\@tempa\@journal@space%
 	\else%
-		% Properly handle where the user has entered abbreviations themselves,
-		% in that case we don't want to get a double-period at the end of the entry.
-		\ifx .\@jrnl@temp@char%
+		% \journal@char@stop is specially defined so this routine knows
+		% when the entire text has been read (where to stop)
+		\ifx \journal@char@stop\@jrnl@temp@char%
 			\expandafter\ifnum\value{jabbrv@word@count} > 0\relax%
 				\journal@output@abbrv%
-				\let\@tempa\@journal@gobble%
 			\else%
-				% Do not remove the period at the end of a user defined journal title,
-				% in case that he has defined a one word journal title abbreviation
 				\jabbrv@one@word@title%
 			\fi%
-			\temp@journal@text{}%
-			\@no@space@true%
-			\@special@period@true%
+			\let\@tempa\@gobble%
 		\else%
-			% \journal@char@stop is specially defined so this routine knows
-			% when the entire text has been read (where to stop)
-			\ifx \journal@char@stop\@jrnl@temp@char%
-				\expandafter\ifnum\value{jabbrv@word@count} > 0\relax%
-					\journal@output@abbrv%
-				\else%
-					\jabbrv@one@word@title%
-				\fi%
-				\let\@tempa\@gobble%
-			\else%
-				% Measure all other characters and include them in the title word
-				\@special@period@false%
-				\let\@tempa\@journal@character%
-			\fi%
+			% Measure all other characters and include them in the title word
+			\@special@period@false%
+			\let\@tempa\@journal@character%
 		\fi%
 	\fi%
 	\@tempa%
