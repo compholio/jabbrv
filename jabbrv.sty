@@ -496,3 +496,12 @@
 \InputIfFileExists{jabbrv-ltwa-\jabbrv@lang.ldf}{}{%
 	\@latex@error{Abbreviation language `jabbrv-ltwa-\jabbrv@lang.ldf' not found}{Select a valid language and recompile.}%
 }
+
+% If working with biblatex then apply the journal title as a "field handler"
+\AtBeginDocument{
+	\@ifpackageloaded{biblatex}{
+		\DeclareFieldInputHandler{journaltitle}{%
+			\def\NewValue{\JournalTitle{#1}}%
+		}
+	}{}
+}
