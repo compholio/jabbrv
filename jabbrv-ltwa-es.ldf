@@ -1,5 +1,5 @@
-%% Copyright 2010 Erich Hoover
-%% E-mail: ehoover@mines.edu
+%% Copyright 2010-2019 Erich E. Hoover
+%% E-mail: erich.e.hoover@gmail.com
 %% 
 %% =============================================
 %% IMPORTANT NOTICE:
@@ -11,7 +11,7 @@
 %%   http://www.latex-project.org/lppl.txt
 %% =============================================
 %% The List of Title Word Abbreviations below is automatically
-%% generatedfrom the ISSN LTWA database, publicly accessible from
+%% generated from the ISSN LTWA database, publicly accessible from
 %% their website:
 %%   http://www.issn.org/2-22660-LTWA.php
 
@@ -20,14 +20,17 @@
 \DefineJournalPartialAbbreviation{Abrevia}{Abr}
 \DefineJournalPartialAbbreviation{Abstracc}{Abstr}
 \DefineJournalPartialAbbreviation{Acabad}{Acab}
+\DefineJournalPartialAbbreviation{Academ}{Acad}
 \DefineJournalAbbreviation{Acampamento}{Acamp}
 \DefineJournalAbbreviation{Accionista}{Accion}
 \DefineJournalAbbreviation{Aceitero}{Aceit}
+\DefineJournalAbbreviation{Acompa\~nado}{Acompa\~n}
 \DefineJournalPartialAbbreviation{Acondicion}{Acond}
 \DefineJournalPartialAbbreviation{Acontecim}{Acontecim}
 \DefineJournalAbbreviation{Acotaci\'on}{Acot}
 \DefineJournalPartialAbbreviation{Activ}{Act}
 \DefineJournalAbbreviation{Actuaci\'on}{Actuac}
+\DefineJournalPartialAbbreviation{Actuali}{Actual}
 \DefineJournalAbbreviation{Acuario}{Acuar}
 \DefineJournalAbbreviation{Acuar\'istico}{Acuar}
 \DefineJournalPartialAbbreviation{Acu\'atic}{Acu\'at}
@@ -59,31 +62,36 @@
 \DefineJournalPartialAbbreviation{Agremia}{Agrem}
 \DefineJournalAbbreviation{Agresi\'on}{Agres}
 \DefineJournalPartialAbbreviation{Agrimens}{Agrimens}
+\DefineJournalAbbreviation{Agrociencias}{Agrocienc}
 \DefineJournalPartialAbbreviation{Agroclimatolog}{Agroclimatol}
 \DefineJournalPartialAbbreviation{Agroecon\'om}{Agroecon}
 \DefineJournalPartialAbbreviation{Agroedafolog}{Agroedafol}
 \DefineJournalAbbreviation{Agroestad\'istico}{Agroestad}
 \DefineJournalAbbreviation{Agroforestal}{Agrofor}
+\DefineJournalAbbreviation{Agroindustria}{Agroind}
 \DefineJournalPartialAbbreviation{Agrometeorolog}{Agrometeorol}
+\DefineJournalPartialAbbreviation{Agropecuari}{Agropecu}
 \DefineJournalAbbreviation{Agrosocial}{Agrosoc}
 \DefineJournalPartialAbbreviation{Agrotecni}{Agrotec}
 \DefineJournalPartialAbbreviation{Agrotur\'is}{Agrotur}
 \DefineJournalPartialAbbreviation{Agrupa}{Agrup}
+\DefineJournalPartialAbbreviation{Agustinian}{Agust}
 \DefineJournalPartialAbbreviation{Ahorr}{Ahorr}
 \DefineJournalPartialAbbreviation{Aisla}{Aisl}
 \DefineJournalPartialAbbreviation{Ajedre}{Ajedr}
-\DefineJournalAbbreviation{Alav\'es}{Alav}
+\DefineJournalAbbreviation{Ajuntament}{Ajunt}
 \DefineJournalPartialAbbreviation{Al\'ambr}{Al\'ambr}
+\DefineJournalAbbreviation{Alav\'es}{Alav}
 \DefineJournalAbbreviation{Albacetense}{Albacet}
-\DefineJournalAbbreviation{Alcal\'a&nbsp;de&nbsp;Henares}{Alcal\'a&nbsp;Hen}
+\DefineJournalAbbreviation{Alcal\'a de Henares}{Alcal\'a Hen}
 \DefineJournalAbbreviation{Alcohofilia}{Alcohofil}
 \DefineJournalAbbreviation{Alegaci\'on}{Alegac}
 \DefineJournalPartialAbbreviation{Aleman}{Alem}
 \DefineJournalAbbreviation{Alergia}{Alerg}
-\DefineJournalPartialAbbreviation{Alergolog}{Alergol}
 \DefineJournalAbbreviation{Al\'ergico}{Al\'erg}
+\DefineJournalPartialAbbreviation{Alergolog}{Alergol}
 \DefineJournalAbbreviation{Algarab\'ia}{Algarab}
-\DefineJournalPartialAbbreviation{Alg\`ebr}{Algebr}
+\DefineJournalPartialAbbreviation{\'Algebr}{Algebr}
 \DefineJournalPartialAbbreviation{Algodon}{Algodon}
 \DefineJournalPartialAbbreviation{Alicant}{Alicant}
 \DefineJournalAbbreviation{Alienado}{Alien}
@@ -107,6 +115,7 @@
 \DefineJournalPartialAbbreviation{Anali}{Anal}
 \DefineJournalAbbreviation{An\'atomo}{An\'at}
 \DefineJournalAbbreviation{Anciano}{Anc}
+\DefineJournalPartialAbbreviation{Andalu}{Andal}
 \DefineJournalPartialAbbreviation{Andin}{Andin}
 \DefineJournalPartialAbbreviation{Andorr}{Andorr}
 \DefineJournalAbbreviation{Andragog\'ia}{Andrag}
@@ -115,10 +124,11 @@
 \DefineJournalAbbreviation{Angloamericano}{Angloam}
 \DefineJournalPartialAbbreviation{Anglosajon}{Anglosaj}
 \DefineJournalPartialAbbreviation{Anilla}{Anill}
-\DefineJournalAbbreviation{Animaci\'o}{Anim\'ac}
+\DefineJournalAbbreviation{Anim\'aci\'o}{Animac}
 \DefineJournalAbbreviation{Animaci\'on}{Animac}
 \DefineJournalPartialAbbreviation{Anonim}{Anon}
 \DefineJournalPartialAbbreviation{Anota}{Anot}
+\DefineJournalPartialAbbreviation{Antag\=onist}{Antagon}
 \DefineJournalAbbreviation{Antecedente}{Anteced}
 \DefineJournalAbbreviation{Antiasm\'atico}{Antiasm\'at}
 \DefineJournalAbbreviation{Anticuario}{Anticu}
@@ -129,13 +139,15 @@
 \DefineJournalAbbreviation{Antineoplasico}{Antineoplas}
 \DefineJournalAbbreviation{Antioqu\'ia}{Antioq}
 \DefineJournalAbbreviation{Antolog\'ia}{Antol}
+\DefineJournalPartialAbbreviation{Anual}{Anu}
+\DefineJournalPartialAbbreviation{Anuar}{Anu}
 \DefineJournalPartialAbbreviation{Anunci}{Anunc}
 \DefineJournalPartialAbbreviation{Aparat}{Apar}
 \DefineJournalAbbreviation{Aparejador}{Aparej}
 \DefineJournalAbbreviation{Apartamento}{Apartam}
 \DefineJournalAbbreviation{Apelaci\'on}{Apelac}
-\DefineJournalAbbreviation{Apertura}{Apert}
 \DefineJournalAbbreviation{Ap\'endice}{Ap\'end}
+\DefineJournalAbbreviation{Apertura}{Apert}
 \DefineJournalAbbreviation{Apocalipsis}{Apocal}
 \DefineJournalAbbreviation{Aportaci\'on}{Aport}
 \DefineJournalPartialAbbreviation{Apotec}{Apot}
@@ -156,15 +168,17 @@
 \DefineJournalPartialAbbreviation{Arquidi\'oces}{Arquidi\'oc}
 \DefineJournalPartialAbbreviation{Arquitect}{Arquit}
 \DefineJournalPartialAbbreviation{Arquiv}{Arq}
+\DefineJournalAbbreviation{Arrendamiento}{Arrend}
 \DefineJournalPartialAbbreviation{Arterioscleros}{Arterioscler}
 \DefineJournalPartialAbbreviation{Artesan}{Artes}
-\DefineJournalAbbreviation{Artiller\'ia}{Artill}
 \DefineJournalAbbreviation{Art\'iculo}{Art\'ic}
+\DefineJournalAbbreviation{Artiller\'ia}{Artill}
 \DefineJournalPartialAbbreviation{Artroscop}{Artrosc}
 \DefineJournalAbbreviation{Artroscop\'ia}{Artrosc}
 \DefineJournalAbbreviation{Arzobispado}{Arzobisp}
 \DefineJournalPartialAbbreviation{Asambl}{Asam}
 \DefineJournalPartialAbbreviation{Asegura}{Asegur}
+\DefineJournalPartialAbbreviation{Asentam}{Asentam}
 \DefineJournalPartialAbbreviation{Asesor}{Asesor}
 \DefineJournalPartialAbbreviation{Asigna}{Asign}
 \DefineJournalAbbreviation{Asistancia}{Asist}
@@ -186,36 +200,43 @@
 \DefineJournalPartialAbbreviation{Audioprotesis}{Audioprotes}
 \DefineJournalAbbreviation{Aut\'entico}{Aut\'ent}
 \DefineJournalAbbreviation{Autocat\'alogo}{Autocat}
+\DefineJournalPartialAbbreviation{Aut\'octon}{Aut\'oct}
 \DefineJournalAbbreviation{Autodefinido}{Autodefin}
 \DefineJournalPartialAbbreviation{Autograf}{Autogr}
+\DefineJournalAbbreviation{Autoinmunidad}{Autoinmun}
 \DefineJournalPartialAbbreviation{Automa\c c}{Autom}
 \DefineJournalAbbreviation{Automoci\'on}{Automoc}
 \DefineJournalPartialAbbreviation{Automovil}{Automov}
 \DefineJournalPartialAbbreviation{Autops}{Autops}
 \DefineJournalAbbreviation{Autoridad}{Aut}
 \DefineJournalAbbreviation{Autoservicio}{Autoserv}
-\DefineJournalPartialAbbreviation{Aut\'octon}{Aut\'oct}
 \DefineJournalAbbreviation{Avaliaci\'on}{Aval}
+\DefineJournalPartialAbbreviation{Avanzad}{Av}
 \DefineJournalAbbreviation{Aviaci\'on}{Aviac}
 \DefineJournalAbbreviation{Avogado}{Avog}
 \DefineJournalPartialAbbreviation{Ayud}{Ayud}
 \DefineJournalPartialAbbreviation{Ayunt}{Ayunt}
+\DefineJournalAbbreviation{Azoriniano}{Azorin}
 \DefineJournalPartialAbbreviation{Azucar}{Azucar}
 \DefineJournalPartialAbbreviation{Bachiller}{Bachill}
-\DefineJournalPartialAbbreviation{Bajo&nbsp;Arag\'on}{Bajo&nbsp;Arag\'on}
+\DefineJournalPartialAbbreviation{Bajo Arag\'on}{Bajo Arag\'on}
 \DefineJournalPartialAbbreviation{Balear}{Balear}
+\DefineJournalPartialAbbreviation{Balnear}{Balnear}
+\DefineJournalPartialAbbreviation{Banc\`ari}{Banc}
 \DefineJournalAbbreviation{Baraltiano}{Baralt}
 \DefineJournalAbbreviation{Baratillo}{Barat}
 \DefineJournalAbbreviation{Barcelona}{Barc}
 \DefineJournalPartialAbbreviation{Barcelones}{Barc}
 \DefineJournalPartialAbbreviation{Barniz}{Barniz}
+\DefineJournalPartialAbbreviation{Bascongad}{Bascon}
 \DefineJournalAbbreviation{Bautista}{Baut}
 \DefineJournalPartialAbbreviation{Bejar}{Bejar}
 \DefineJournalAbbreviation{Bellas-artes}{B-artes}
 \DefineJournalAbbreviation{Bellas-letras}{B-let}
 \DefineJournalAbbreviation{Bendici\'on}{Bendic}
-\DefineJournalAbbreviation{Beneficencia}{Benefic}
 \DefineJournalPartialAbbreviation{Ben\'efic}{Ben\'ef}
+\DefineJournalAbbreviation{Beneficencia}{Benefic}
+\DefineJournalAbbreviation{Bianuario}{Bianu}
 \DefineJournalPartialAbbreviation{Bibliof}{Bibliof}
 \DefineJournalPartialAbbreviation{Bibliometr}{Bibliometr}
 \DefineJournalPartialAbbreviation{Bibliotec}{Bibl}
@@ -252,7 +273,7 @@
 \DefineJournalPartialAbbreviation{Broncoesofagolog}{Broncoesofagol}
 \DefineJournalPartialAbbreviation{Bronconeumolog}{Bronconeumol}
 \DefineJournalAbbreviation{Bruselas}{Brus}
-\DefineJournalAbbreviation{Buenos&nbsp;Aires}{B&nbsp;Aires}
+\DefineJournalAbbreviation{Buenos Aires}{B Aires}
 \DefineJournalAbbreviation{Buhardilla}{Buhard}
 \DefineJournalAbbreviation{Burgal\'es}{Burgal}
 \DefineJournalAbbreviation{Burs\'atil}{Burs}
@@ -265,16 +286,18 @@
 \DefineJournalAbbreviation{Calidad}{Calid}
 \DefineJournalPartialAbbreviation{Califica}{Calific}
 \DefineJournalAbbreviation{Calzado}{Calz}
+\DefineJournalAbbreviation{Calzatecnia}{Calzatec}
 \DefineJournalAbbreviation{Campamento}{Campam}
 \DefineJournalPartialAbbreviation{Canar}{Canar}
 \DefineJournalPartialAbbreviation{Cancioner}{Cancion}
+\DefineJournalPartialAbbreviation{Cantabr}{Cantab}
 \DefineJournalAbbreviation{Capacidad}{Capacid}
 \DefineJournalPartialAbbreviation{Capacit}{Capacit}
 \DefineJournalPartialAbbreviation{Capitali}{Capital}
 \DefineJournalAbbreviation{Capit\'an}{Capit}
 \DefineJournalAbbreviation{Caprichoso}{Caprich}
-\DefineJournalAbbreviation{Carbon\'ifero}{Carbonif}
 \DefineJournalPartialAbbreviation{Carb\'onic}{Carb\'on}
+\DefineJournalAbbreviation{Carbon\'ifero}{Carbonif}
 \DefineJournalPartialAbbreviation{Cardiac}{Card}
 \DefineJournalPartialAbbreviation{Cardiopat}{Cardiop}
 \DefineJournalPartialAbbreviation{Carnic}{Carn}
@@ -304,6 +327,7 @@
 \DefineJournalAbbreviation{Cerebro}{Cereb}
 \DefineJournalAbbreviation{Cerramiento}{Cerram}
 \DefineJournalAbbreviation{Certamen}{Certam}
+\DefineJournalAbbreviation{Certificaci\'on}{Certif}
 \DefineJournalPartialAbbreviation{Cervantin}{Cervant}
 \DefineJournalPartialAbbreviation{Cervantis}{Cervant}
 \DefineJournalAbbreviation{C\'ervico-facial}{C\'erv-fac}
@@ -313,10 +337,12 @@
 \DefineJournalPartialAbbreviation{Chilen}{Chil}
 \DefineJournalPartialAbbreviation{Chist}{Chist}
 \DefineJournalPartialAbbreviation{Chubutian}{Chubut}
+\DefineJournalAbbreviation{Cicatrizaci\'on}{Cicatr}
 \DefineJournalPartialAbbreviation{Ciclis}{Cicl}
 \DefineJournalPartialAbbreviation{Cicloturis}{Ciclotur}
+\DefineJournalPartialAbbreviation{Ciencia}{Cienc}
 \DefineJournalPartialAbbreviation{Cientific}{Cient}
-\DefineJournalAbbreviation{Ci\^encia}{Cienc}
+\DefineJournalAbbreviation{Cimentaci\'on}{Cim}
 \DefineJournalAbbreviation{Cinemateca}{Cinemat}
 \DefineJournalPartialAbbreviation{Cinematograf}{Cinematogr}
 \DefineJournalAbbreviation{Circunscripci\'on}{Circunscr}
@@ -325,8 +351,10 @@
 \DefineJournalPartialAbbreviation{Cirujan}{Cir}
 \DefineJournalAbbreviation{Citator}{Cit}
 \DefineJournalPartialAbbreviation{Citogenet}{Citogenet}
+\DefineJournalAbbreviation{Citopatolog\'ia}{Citopatol}
 \DefineJournalAbbreviation{Citr\'icola}{Citr\'ic}
-\DefineJournalAbbreviation{Ciudad&nbsp;Real}{Ciudad&nbsp;R}
+\DefineJournalAbbreviation{Ciudad Aut\'onoma de Buenos Aires}{Ciudad Aut\'on B Aires}
+\DefineJournalAbbreviation{Ciudad Real}{Ciudad R}
 \DefineJournalPartialAbbreviation{Ciudad}{Ciudad}
 \DefineJournalAbbreviation{Civilizaci\'on}{Civiliz}
 \DefineJournalAbbreviation{Clar\'in}{Clar}
@@ -347,12 +375,16 @@
 \DefineJournalAbbreviation{Coloquio}{Coloq}
 \DefineJournalPartialAbbreviation{Colposcop}{Colposc}
 \DefineJournalPartialAbbreviation{Comarc}{Comarc}
+\DefineJournalPartialAbbreviation{Comenta}{Coment}
 \DefineJournalAbbreviation{Cometido}{Comet}
 \DefineJournalPartialAbbreviation{Comisar}{Comis}
 \DefineJournalPartialAbbreviation{Comisi}{Com}
+\DefineJournalAbbreviation{Compania}{Cia}
 \DefineJournalPartialAbbreviation{Compart}{Compart}
 \DefineJournalPartialAbbreviation{Compend}{Compend}
+\DefineJournalPartialAbbreviation{Compensac}{Compens}
 \DefineJournalPartialAbbreviation{Competic}{Compet}
+\DefineJournalAbbreviation{Competitividad}{Compet }
 \DefineJournalPartialAbbreviation{Complement}{Complement}
 \DefineJournalPartialAbbreviation{Complicacion}{Complic}
 \DefineJournalAbbreviation{Complutense}{Complut}
@@ -377,7 +409,9 @@
 \DefineJournalAbbreviation{Confidencial}{Confid}
 \DefineJournalAbbreviation{Confirmado}{Confirm}
 \DefineJournalPartialAbbreviation{Confiter}{Confit}
+\DefineJournalAbbreviation{Confrontaci\'on}{Confront}
 \DefineJournalPartialAbbreviation{Congnosc}{Congnosc}
+\DefineJournalAbbreviation{Congregaci\'on}{Congregac}
 \DefineJournalAbbreviation{Congruencia}{Congruen}
 \DefineJournalPartialAbbreviation{Conmemora}{Conmem}
 \DefineJournalPartialAbbreviation{Conmut}{Conmut}
@@ -389,7 +423,11 @@
 \DefineJournalAbbreviation{Constelaci\'on}{Constel}
 \DefineJournalPartialAbbreviation{Constituc}{Const}
 \DefineJournalAbbreviation{Construcci\'on}{Constr}
+\DefineJournalPartialAbbreviation{Consult}{Consult}
 \DefineJournalPartialAbbreviation{Consum}{Consum}
+\DefineJournalPartialAbbreviation{Contab}{Contab}
+\DefineJournalAbbreviation{Contador}{Contad}
+\DefineJournalAbbreviation{Contadur\'ia}{Contad}
 \DefineJournalAbbreviation{Contencioso}{Contenc}
 \DefineJournalPartialAbbreviation{Contend}{Contend}
 \DefineJournalAbbreviation{Contenido}{Conten}
@@ -419,7 +457,6 @@
 \DefineJournalPartialAbbreviation{Cristalograf}{Cristalogr}
 \DefineJournalAbbreviation{Cristianismo}{Crist}
 \DefineJournalAbbreviation{Cristiano}{Crist}
-\DefineJournalPartialAbbreviation{Critica}{Crit}
 \DefineJournalAbbreviation{Cr\'itico}{Cr\'it}
 \DefineJournalAbbreviation{Croacia}{Croac}
 \DefineJournalPartialAbbreviation{Cromatograf}{Cromatogr}
@@ -433,8 +470,10 @@
 \DefineJournalPartialAbbreviation{Cuaderno}{Cuad}
 \DefineJournalPartialAbbreviation{Cualitat}{Cual}
 \DefineJournalPartialAbbreviation{Cuantic}{Cuant}
+\DefineJournalPartialAbbreviation{Cuarenta}{Cuar}
 \DefineJournalAbbreviation{Cuatrimestral}{Cuatrimest}
 \DefineJournalAbbreviation{Cubicaci\'on}{Cubic}
+\DefineJournalPartialAbbreviation{Cuentadante}{Cuentad}
 \DefineJournalPartialAbbreviation{Cuestion}{Cuest}
 \DefineJournalPartialAbbreviation{Cuid}{Cuid}
 \DefineJournalPartialAbbreviation{Cumplid}{Cumpl}
@@ -453,11 +492,14 @@
 \DefineJournalAbbreviation{Decorar}{Decor}
 \DefineJournalAbbreviation{Dedicado}{Dedic}
 \DefineJournalAbbreviation{Defectivo}{Defect}
+\DefineJournalAbbreviation{Defensa}{Def}
 \DefineJournalAbbreviation{Defensor}{Def}
 \DefineJournalAbbreviation{Defunci\'on}{Defunc}
 \DefineJournalAbbreviation{Degradaci\'on}{Degrad}
 \DefineJournalAbbreviation{Delictiva}{Delict}
+\DefineJournalPartialAbbreviation{Delinea}{Delin}
 \DefineJournalAbbreviation{Demencia}{Demenc}
+\DefineJournalPartialAbbreviation{Democra}{Democr}
 \DefineJournalPartialAbbreviation{Demograf}{Demogr}
 \DefineJournalPartialAbbreviation{Demonstrac}{Demonstr}
 \DefineJournalPartialAbbreviation{Demostrat}{Demostr}
@@ -487,12 +529,12 @@
 \DefineJournalPartialAbbreviation{Destin}{Destin}
 \DefineJournalPartialAbbreviation{Detall}{Detall}
 \DefineJournalAbbreviation{Diab\'etico}{Diab\'et}
-\DefineJournalPartialAbbreviation{Dialectolog}{Dialectol}
 \DefineJournalAbbreviation{Dial\'ectico}{Dial\'ect}
+\DefineJournalPartialAbbreviation{Dialectolog}{Dialectol}
 \DefineJournalAbbreviation{Diario}{D}
 \DefineJournalAbbreviation{Diccionario}{Dicc}
 \DefineJournalPartialAbbreviation{Dictam}{Dictam}
-\DefineJournalAbbreviation{Didaskalia}{Didask}
+\DefineJournalPartialAbbreviation{Didacti}{Didact}
 \DefineJournalAbbreviation{Dieciochista}{Diecioch}
 \DefineJournalPartialAbbreviation{Diferen}{Difer}
 \DefineJournalAbbreviation{Difusi\'on}{Difus}
@@ -513,7 +555,9 @@
 \DefineJournalAbbreviation{Distinci\'on}{Distinc}
 \DefineJournalAbbreviation{Distinguido}{Disting}
 \DefineJournalPartialAbbreviation{Distint}{Distint}
+\DefineJournalAbbreviation{Distop\'ia}{Distop}
 \DefineJournalPartialAbbreviation{Distribu}{Distrib}
+\DefineJournalAbbreviation{Distrital}{Dist}
 \DefineJournalAbbreviation{Distrito}{Dist}
 \DefineJournalAbbreviation{Diversificaci\'on}{Diversif}
 \DefineJournalPartialAbbreviation{Divulga}{Divulg}
@@ -527,12 +571,14 @@
 \DefineJournalAbbreviation{Drogodependencia}{Drogodepend}
 \DefineJournalPartialAbbreviation{Eclesiastic}{Ecles}
 \DefineJournalAbbreviation{Econograf\'ia}{Econogr}
+\DefineJournalAbbreviation{Econot\'ecnia}{Econot\'ec}
 \DefineJournalAbbreviation{Ecotur\'istica}{Ecotur}
 \DefineJournalAbbreviation{Ecuaci\'on}{Ecu}
 \DefineJournalAbbreviation{Ecuador}{Ecuad}
 \DefineJournalAbbreviation{Ecuestre}{Ecuest}
 \DefineJournalAbbreviation{Ecumenico}{Ecum}
 \DefineJournalAbbreviation{Edici\'on}{Ed}
+\DefineJournalAbbreviation{Editorial}{\'Editor}
 \DefineJournalPartialAbbreviation{Educa}{Educ}
 \DefineJournalPartialAbbreviation{Efectiv}{Ef}
 \DefineJournalAbbreviation{Efecto}{Ef}
@@ -545,7 +591,7 @@
 \DefineJournalAbbreviation{Ejecutivo}{Ejec}
 \DefineJournalAbbreviation{Ejemplo}{Ej}
 \DefineJournalAbbreviation{Ejercicio}{Ejerc}
-\DefineJournalAbbreviation{El&nbsp;Salvador}{El&nbsp;Salv}
+\DefineJournalAbbreviation{El Salvador}{El Salv}
 \DefineJournalAbbreviation{Elecci\'on}{Elecc}
 \DefineJournalPartialAbbreviation{Electroacustic}{Electroacust}
 \DefineJournalPartialAbbreviation{Electrodomestic}{Electrodomest}
@@ -567,6 +613,7 @@
 \DefineJournalPartialAbbreviation{Emprend}{Emprend}
 \DefineJournalPartialAbbreviation{Empres}{Empres}
 \DefineJournalAbbreviation{Empresario}{Empres}
+\DefineJournalPartialAbbreviation{Encarg}{Encarg}
 \DefineJournalAbbreviation{Encefalitis}{Encef}
 \DefineJournalPartialAbbreviation{Encerra}{Encerr}
 \DefineJournalPartialAbbreviation{Encicloped}{Encicl}
@@ -575,16 +622,21 @@
 \DefineJournalAbbreviation{Endeudamiento}{Endeud}
 \DefineJournalAbbreviation{Endodoncia}{Endod}
 \DefineJournalAbbreviation{Endovascular}{Endovasc}
-\DefineJournalAbbreviation{Energia}{Energ}
+\DefineJournalAbbreviation{Energia}{\`Energ}
 \DefineJournalAbbreviation{Enfermedad}{Enferm}
 \DefineJournalAbbreviation{Enfermer\'ia}{Enferm}
 \DefineJournalAbbreviation{Enfermero}{Enferm}
 \DefineJournalAbbreviation{Enquesta}{Enq}
 \DefineJournalPartialAbbreviation{Enregistr}{Enregist}
+\DefineJournalAbbreviation{Ensayo}{Ens}
+\DefineJournalAbbreviation{Ense\~nante}{Ense\~n}
+\DefineJournalAbbreviation{Ense\~nanza}{Ense\~n}
+\DefineJournalPartialAbbreviation{Enso\~na}{Enso\~n}
 \DefineJournalAbbreviation{Entidad}{Entid}
 \DefineJournalPartialAbbreviation{Entrecorrient}{Entrecorr}
 \DefineJournalPartialAbbreviation{Entren}{Entren}
 \DefineJournalAbbreviation{Entretenimiento}{Entreten}
+\DefineJournalPartialAbbreviation{Envasad}{Envas}
 \DefineJournalPartialAbbreviation{Envejec}{Envejec}
 \DefineJournalPartialAbbreviation{Epigraf}{Epigr}
 \DefineJournalAbbreviation{Episodio}{Epis}
@@ -595,7 +647,7 @@
 \DefineJournalAbbreviation{Escalaf\'on}{Escal}
 \DefineJournalAbbreviation{Escandinavo}{Escand}
 \DefineJournalAbbreviation{Escaparate}{Escapar}
-\DefineJournalAbbreviation{Escenario}{Escen}
+\DefineJournalPartialAbbreviation{Escenario}{Escen}
 \DefineJournalAbbreviation{Esc\'enico}{Esc\'en}
 \DefineJournalAbbreviation{Esclerosis}{Escler}
 \DefineJournalPartialAbbreviation{Escola}{Esc}
@@ -608,6 +660,7 @@
 \DefineJournalAbbreviation{Escurialense}{Escur}
 \DefineJournalAbbreviation{Esencial}{Esenc}
 \DefineJournalAbbreviation{Eslav\'istica}{Eslav}
+\DefineJournalAbbreviation{Espa\~na}{Esp}
 \DefineJournalPartialAbbreviation{Espa\~nol}{Esp}
 \DefineJournalPartialAbbreviation{Especial}{Espec}
 \DefineJournalPartialAbbreviation{Espectacul}{Espect}
@@ -623,11 +676,12 @@
 \DefineJournalPartialAbbreviation{Establ}{Establ}
 \DefineJournalPartialAbbreviation{Estac}{Estac}
 \DefineJournalPartialAbbreviation{Estadistic}{Estad}
-\DefineJournalAbbreviation{Estados&nbsp;Unidos}{E&nbsp;U}
+\DefineJournalAbbreviation{Estados Unidos}{E U}
+\DefineJournalAbbreviation{Estandarte}{Estand}
 \DefineJournalPartialAbbreviation{Estatist}{Estat}
 \DefineJournalAbbreviation{Estatutario}{Estatut}
 \DefineJournalPartialAbbreviation{Esterili}{Esteril}
-\DefineJournalPartialAbbreviation{Est\`etic}{Estet}
+\DefineJournalPartialAbbreviation{\`Estetic}{Estet}
 \DefineJournalAbbreviation{Estimaci\'on}{Estim}
 \DefineJournalPartialAbbreviation{Estimul}{Estimul}
 \DefineJournalPartialAbbreviation{Estomatolog}{Estomatol}
@@ -638,9 +692,11 @@
 \DefineJournalAbbreviation{Estructura}{Estruct}
 \DefineJournalPartialAbbreviation{Estud}{Estud}
 \DefineJournalAbbreviation{Estupefaciente}{Estupef}
+\DefineJournalAbbreviation{\'Etnico}{\'Etn}
 \DefineJournalAbbreviation{Etnohistoria}{Etnohist}
 \DefineJournalPartialAbbreviation{Etnoling\"uist}{Etnoling\"uist}
 \DefineJournalPartialAbbreviation{Etolog}{Etol}
+\DefineJournalAbbreviation{Eucarist\'ia}{Eucar}
 \DefineJournalPartialAbbreviation{Eucar\'istic}{Eucar}
 \DefineJournalAbbreviation{Eugenesia}{Eugen}
 \DefineJournalPartialAbbreviation{Euroamerican}{Euroam}
@@ -655,6 +711,7 @@
 \DefineJournalAbbreviation{Excavaci\'on}{Excav}
 \DefineJournalPartialAbbreviation{Excel}{Excel}
 \DefineJournalAbbreviation{Excelent\'isimo}{Excmo}
+\DefineJournalPartialAbbreviation{Excluid}{Excluid}
 \DefineJournalAbbreviation{Excursionista}{Excursion}
 \DefineJournalAbbreviation{Exfoliativo}{Exfol}
 \DefineJournalPartialAbbreviation{Exili}{Exil}
@@ -675,35 +732,38 @@
 \DefineJournalAbbreviation{Extraordinario}{Extraordin}
 \DefineJournalAbbreviation{Extravagante}{Extravag}
 \DefineJournalAbbreviation{Extremadura}{Extremad}
-\DefineJournalAbbreviation{\'Editorial}{Editor}
-\DefineJournalAbbreviation{\'Etnico}{\'Etn}
 \DefineJournalAbbreviation{Fabril}{Fabr}
+\DefineJournalPartialAbbreviation{F\'acil}{F\'acil}
+\DefineJournalPartialAbbreviation{Facult}{Fac}
+\DefineJournalPartialAbbreviation{Falconian}{Falcon}
 \DefineJournalPartialAbbreviation{Farmac}{Farm}
 \DefineJournalPartialAbbreviation{Farmacocineti}{Farmacocinet}
 \DefineJournalPartialAbbreviation{Farmacodependen}{Farmacodepend}
 \DefineJournalAbbreviation{Farmacognosia}{Farmacogn}
 \DefineJournalPartialAbbreviation{Farmacolog}{Farmacol}
+\DefineJournalAbbreviation{Farmacotecnia}{Farmacotec}
 \DefineJournalPartialAbbreviation{Farmacoterap}{Farmacoter}
 \DefineJournalAbbreviation{Farmacovigilancia}{Farmacovigil}
 \DefineJournalPartialAbbreviation{Farmacovixilanc}{Farmacovixil}
-\DefineJournalPartialAbbreviation{F\'acil}{F\'acil}
 \DefineJournalAbbreviation{Femenino}{Fem}
 \DefineJournalAbbreviation{Fen\'omeno}{Fen\'om}
+\DefineJournalAbbreviation{F\'erreo}{F\'err}
 \DefineJournalPartialAbbreviation{Ferreter}{Ferret}
 \DefineJournalAbbreviation{Ferreter\'ia}{Ferret}
 \DefineJournalAbbreviation{Ferrocarril}{Ferrocarr}
 \DefineJournalPartialAbbreviation{Ferrol}{Ferrol}
 \DefineJournalPartialAbbreviation{Ferromineral}{Ferrominer}
 \DefineJournalAbbreviation{Ferromineria}{Ferromin}
-\DefineJournalPartialAbbreviation{Fertili}{Fertil}
 \DefineJournalAbbreviation{Fervojisto}{Fervoj}
-\DefineJournalAbbreviation{F\'erreo}{F\'err}
 \DefineJournalAbbreviation{Ficci\'on}{Ficc}
 \DefineJournalAbbreviation{Fichero}{Fich}
 \DefineJournalAbbreviation{Fideicomiso}{Fideicom}
 \DefineJournalPartialAbbreviation{Fiduciar}{Fiduc}
 \DefineJournalPartialAbbreviation{Filipin}{Filip}
 \DefineJournalPartialAbbreviation{Fisica}{Fis}
+\DefineJournalAbbreviation{F\`isico}{F\`is}
+\DefineJournalPartialAbbreviation{F\`isicomatem\`at}{F\`isicomat}
+\DefineJournalPartialAbbreviation{F\`isiconuclear}{F\`isiconucl}
 \DefineJournalAbbreviation{Fisicoqu\'imica}{Fisicoqu\'im}
 \DefineJournalPartialAbbreviation{Fisiocrit}{Fisiocrit}
 \DefineJournalPartialAbbreviation{Fisiograf}{Fisiogr}
@@ -714,13 +774,11 @@
 \DefineJournalPartialAbbreviation{Fitoparasitolog}{Fitoparasitol}
 \DefineJournalPartialAbbreviation{Fitosanitar}{Fitosanit}
 \DefineJournalPartialAbbreviation{Fitotecni}{Fitotec}
-\DefineJournalAbbreviation{F\`isico}{F\`is}
-\DefineJournalPartialAbbreviation{F\`isicomatem\`at}{F\`isicomat}
-\DefineJournalPartialAbbreviation{F\`isiconuclear}{F\`isiconucl}
 \DefineJournalAbbreviation{Florister\'ia}{Florist}
 \DefineJournalAbbreviation{Folclor}{Folc}
 \DefineJournalPartialAbbreviation{Folleto}{Foll}
 \DefineJournalAbbreviation{Fomento}{Fom}
+\DefineJournalPartialAbbreviation{Fonoaudiolog}{Fonoaudiol}
 \DefineJournalAbbreviation{Fonol\'ogico}{Fonol}
 \DefineJournalAbbreviation{Formador}{Form}
 \DefineJournalAbbreviation{Fornitura}{Fornit}
@@ -733,6 +791,7 @@
 \DefineJournalAbbreviation{Franc\'es}{Fr}
 \DefineJournalAbbreviation{Francia}{Fr}
 \DefineJournalAbbreviation{Franciscano}{Francisc}
+\DefineJournalAbbreviation{Francofon\'ia}{Francofon}
 \DefineJournalAbbreviation{Frecuencia}{Frec}
 \DefineJournalAbbreviation{Freudiano}{Freud}
 \DefineJournalAbbreviation{Frontera}{Front}
@@ -741,9 +800,10 @@
 \DefineJournalAbbreviation{Fruticola}{Frutic}
 \DefineJournalPartialAbbreviation{Frutihort\'icol}{Frutihort\'ic}
 \DefineJournalAbbreviation{Fuerteventura}{Fuertevent}
+\DefineJournalAbbreviation{Funci\'on}{Func}
 \DefineJournalAbbreviation{Funcional}{Func}
 \DefineJournalPartialAbbreviation{Funcionar}{Funcion}
-\DefineJournalAbbreviation{Funci\'on}{Func}
+\DefineJournalPartialAbbreviation{Fundac}{Fund}
 \DefineJournalAbbreviation{Fundici\'on}{Fundic}
 \DefineJournalAbbreviation{Fundidor}{Fundid}
 \DefineJournalAbbreviation{Furgoneta}{Furgon}
@@ -764,6 +824,8 @@
 \DefineJournalPartialAbbreviation{Generador}{Gener}
 \DefineJournalAbbreviation{Geociencia}{Geocienc}
 \DefineJournalPartialAbbreviation{Geocriog\'enic}{Geocriog}
+\DefineJournalPartialAbbreviation{G\'eod\'es}{G\'eod}
+\DefineJournalPartialAbbreviation{Geodet}{G\'eod}
 \DefineJournalAbbreviation{Geoestadistica}{Geoestad}
 \DefineJournalAbbreviation{Geoestrategia}{Geoestrateg}
 \DefineJournalPartialAbbreviation{Geofis}{Geofis}
@@ -773,9 +835,8 @@
 \DefineJournalAbbreviation{Ger\^encia}{Gerenc}
 \DefineJournalAbbreviation{German\'ia}{Ger}
 \DefineJournalPartialAbbreviation{Gerund}{Gerund}
+\DefineJournalAbbreviation{Gesti\'on}{Gest}
 \DefineJournalAbbreviation{Getseman\'i}{Getsem}
-\DefineJournalPartialAbbreviation{G\'eod\'es}{Geod}
-\DefineJournalPartialAbbreviation{G\'eod\'et}{Geod}
 \DefineJournalPartialAbbreviation{Gimnas}{Gimn}
 \DefineJournalPartialAbbreviation{Ginecolog}{Ginecol}
 \DefineJournalAbbreviation{Ginecotocolog\'ia}{Ginecotocol}
@@ -786,6 +847,7 @@
 \DefineJournalPartialAbbreviation{Grafopsicol\'og}{Grafopsicol}
 \DefineJournalPartialAbbreviation{Gramatic}{Gram}
 \DefineJournalPartialAbbreviation{Grampositiv}{Gramposit}
+\DefineJournalAbbreviation{Gran Breta\~na}{GB}
 \DefineJournalAbbreviation{Granadino}{Granad}
 \DefineJournalAbbreviation{Grande}{Gd}
 \DefineJournalAbbreviation{Grandeza}{Grand}
@@ -802,6 +864,7 @@
 \DefineJournalAbbreviation{Habitaci\'on}{Habitac}
 \DefineJournalAbbreviation{Habitatge}{Habitat}
 \DefineJournalPartialAbbreviation{Habla}{Habl}
+\DefineJournalAbbreviation{Hahnemanniano}{Hahnemann}
 \DefineJournalPartialAbbreviation{Hariner}{Hariner}
 \DefineJournalAbbreviation{Hebdomadario}{Hebd}
 \DefineJournalAbbreviation{Hebraicoespa\~nol}{Hebraicoesp}
@@ -816,6 +879,8 @@
 \DefineJournalAbbreviation{Heraldo}{Her}
 \DefineJournalAbbreviation{Heredero}{Hered}
 \DefineJournalAbbreviation{Hermanamiento}{Hermanam}
+\DefineJournalAbbreviation{Hermandad}{Herman}
+\DefineJournalAbbreviation{Herramienta}{Herram}
 \DefineJournalPartialAbbreviation{Hexagon}{Hexag}
 \DefineJournalPartialAbbreviation{Hidalguens}{Hidalg}
 \DefineJournalPartialAbbreviation{Hidatidolog}{Hidatidol}
@@ -835,10 +900,14 @@
 \DefineJournalPartialAbbreviation{Hipotalam}{Hipotal}
 \DefineJournalAbbreviation{Hipotecario}{Hipotec}
 \DefineJournalPartialAbbreviation{Hispan}{Hisp}
+\DefineJournalPartialAbbreviation{Hispanoamer}{Hispanoam}
 \DefineJournalPartialAbbreviation{Hispanohabla}{Hispanohabl}
+\DefineJournalPartialAbbreviation{Histor}{Hist}
 \DefineJournalPartialAbbreviation{Historiograf}{Historiogr}
+\DefineJournalAbbreviation{Holanda}{Hol}
 \DefineJournalAbbreviation{Homenaje}{Homen}
 \DefineJournalAbbreviation{Hondure\~no}{Hondur}
+\DefineJournalPartialAbbreviation{Horizontal}{Horiz}
 \DefineJournalAbbreviation{Horizonte}{Horiz}
 \DefineJournalAbbreviation{Hormig\'on}{Hormig}
 \DefineJournalAbbreviation{Hortaliza}{Hortal}
@@ -851,8 +920,8 @@
 \DefineJournalPartialAbbreviation{Humed}{Humed}
 \DefineJournalAbbreviation{Iberia}{Iber}
 \DefineJournalPartialAbbreviation{Iberic}{Iber}
-\DefineJournalPartialAbbreviation{Iberoamerican}{Iberoam}
 \DefineJournalAbbreviation{Iberoam\'erica}{Iberoam}
+\DefineJournalPartialAbbreviation{Iberoamerican}{Iberoam}
 \DefineJournalPartialAbbreviation{Iconograf}{Iconogr}
 \DefineJournalPartialAbbreviation{Idiom}{Idiom}
 \DefineJournalAbbreviation{Igualdad}{Igual}
@@ -877,6 +946,7 @@
 \DefineJournalPartialAbbreviation{Indemniz}{Indemn}
 \DefineJournalAbbreviation{Indicador}{Indic}
 \DefineJournalPartialAbbreviation{Indoamerican}{Indoam}
+\DefineJournalAbbreviation{Infanter\'ia}{Infanter}
 \DefineJournalPartialAbbreviation{Infecci}{Infecc}
 \DefineJournalAbbreviation{Infectolog\'ia}{Infectol}
 \DefineJournalPartialAbbreviation{Infectopatolog}{Infectopatol}
@@ -885,15 +955,18 @@
 \DefineJournalAbbreviation{Inflamaci\'on}{Inflam}
 \DefineJournalAbbreviation{Inflamatorio}{Inflam}
 \DefineJournalAbbreviation{Informa}{Inf}
-\DefineJournalPartialAbbreviation{Inform\=ac}{Inf}
+\DefineJournalPartialAbbreviation{Informac}{Inf}
 \DefineJournalAbbreviation{Informador}{Inf}
 \DefineJournalAbbreviation{Infracci\'on}{Infracc}
 \DefineJournalAbbreviation{Infraestructura}{Infraestruct}
 \DefineJournalPartialAbbreviation{Ingenier}{Ing}
 \DefineJournalAbbreviation{Ingl\'es}{Ingl}
 \DefineJournalAbbreviation{Ingreso}{Ingr}
+\DefineJournalPartialAbbreviation{Inhala}{Inhal}
 \DefineJournalPartialAbbreviation{Inhibidor}{Inhibid}
 \DefineJournalAbbreviation{Iniciativa}{Iniciat}
+\DefineJournalPartialAbbreviation{Inmacul}{Inmacul}
+\DefineJournalAbbreviation{Inmaterial}{Inmater}
 \DefineJournalAbbreviation{Inmersi\'on}{Inmers}
 \DefineJournalPartialAbbreviation{Inmigr}{Inmigr}
 \DefineJournalAbbreviation{Inmobiliario}{Inmob}
@@ -915,10 +988,11 @@
 \DefineJournalPartialAbbreviation{Instituc}{Inst}
 \DefineJournalAbbreviation{Instituto}{Inst}
 \DefineJournalPartialAbbreviation{Instrucc}{Instr}
+\DefineJournalAbbreviation{Instrumentaci\'on}{Instrum}
 \DefineJournalAbbreviation{Instrumento}{Instrum}
 \DefineJournalPartialAbbreviation{Insuficien}{Insufic}
 \DefineJournalPartialAbbreviation{Intelectual}{Intelect}
-\DefineJournalPartialAbbreviation{Intelig\^en}{Intel}
+\DefineJournalPartialAbbreviation{Inteligen}{Intel}
 \DefineJournalAbbreviation{Intendencia}{Intend}
 \DefineJournalAbbreviation{Interactivo}{Interact}
 \DefineJournalPartialAbbreviation{Interamerican}{Interam}
@@ -934,6 +1008,7 @@
 \DefineJournalPartialAbbreviation{Intermediar}{Intermed}
 \DefineJournalPartialAbbreviation{Internaci}{Int}
 \DefineJournalAbbreviation{Internado}{Intern}
+\DefineJournalAbbreviation{Interrupci\'on}{Interrup}
 \DefineJournalPartialAbbreviation{Interseccion}{Intersecc}
 \DefineJournalAbbreviation{Intersecretarial}{Intersecr}
 \DefineJournalAbbreviation{Intersindical}{Intersind}
@@ -947,8 +1022,10 @@
 \DefineJournalAbbreviation{Isqu\'emica}{Isqu\'em}
 \DefineJournalPartialAbbreviation{Itinerar}{Itiner}
 \DefineJournalAbbreviation{Izquierda}{Izqda}
+\DefineJournalAbbreviation{Jacaranda}{Jacar}
 \DefineJournalPartialAbbreviation{Jardin}{Jard}
 \DefineJournalPartialAbbreviation{Jaurerri}{Jaur}
+\DefineJournalPartialAbbreviation{Javerian}{Javer}
 \DefineJournalAbbreviation{Jefatura}{Jef}
 \DefineJournalAbbreviation{Jeneral}{Jen}
 \DefineJournalAbbreviation{Jornada}{Jorn}
@@ -957,9 +1034,9 @@
 \DefineJournalAbbreviation{Jubilea}{Jubil}
 \DefineJournalPartialAbbreviation{Jude}{Jud}
 \DefineJournalAbbreviation{Jud\'io}{Jud}
-\DefineJournalPartialAbbreviation{Juridic}{Jurid}
-\DefineJournalAbbreviation{Jurisdiccional}{Jurisd}
+\DefineJournalPartialAbbreviation{Jur\'idic}{Jur\'id}
 \DefineJournalAbbreviation{Jurisdicci\'on}{Jurisd}
+\DefineJournalAbbreviation{Jurisdiccional}{Jurisd}
 \DefineJournalAbbreviation{Jurisprudencia}{Jurisprud}
 \DefineJournalPartialAbbreviation{Juvent}{Juv}
 \DefineJournalAbbreviation{Kemio}{Kem}
@@ -969,27 +1046,29 @@
 \DefineJournalPartialAbbreviation{Konsil}{Kons}
 \DefineJournalPartialAbbreviation{Laberint}{Laberin}
 \DefineJournalAbbreviation{Laboral}{Labor}
+\DefineJournalAbbreviation{L\'acteo}{L\'act}
 \DefineJournalPartialAbbreviation{Laici}{Laic}
 \DefineJournalPartialAbbreviation{Laparosc\'op}{Laparosc}
 \DefineJournalPartialAbbreviation{Laringoiatr}{Laringoiatr}
-\DefineJournalAbbreviation{Las&nbsp;Canarias}{Las&nbsp;Canar}
+\DefineJournalAbbreviation{Las Canarias}{Las Canar}
 \DefineJournalPartialAbbreviation{Latina}{Lat}
 \DefineJournalAbbreviation{Latino}{Lat}
+\DefineJournalAbbreviation{Latinoam\'erica}{Latinoam}
+\DefineJournalPartialAbbreviation{Latinoamerican}{Latinoam}
 \DefineJournalAbbreviation{Latinonoticia}{Latinonot}
 \DefineJournalAbbreviation{Latitud}{Latid}
 \DefineJournalAbbreviation{Lavander\'ia}{Lavand}
-\DefineJournalAbbreviation{L\'acteo}{L\'act}
 \DefineJournalPartialAbbreviation{Lecher}{Leche}
 \DefineJournalPartialAbbreviation{Legisla}{Legis}
-\DefineJournalPartialAbbreviation{Legislat}{L\'egis}
+\DefineJournalPartialAbbreviation{L\'egislat}{L\'egis}
 \DefineJournalAbbreviation{Lengua}{Leng}
 \DefineJournalAbbreviation{Lenguaje}{Leng}
+\DefineJournalPartialAbbreviation{L\'epidopt\`er}{L\'epid}
 \DefineJournalPartialAbbreviation{Lepidopterolog}{Lepidopterol}
 \DefineJournalAbbreviation{Leridano}{Lerid}
 \DefineJournalPartialAbbreviation{Letra}{Let}
 \DefineJournalAbbreviation{Levantino}{Levant}
 \DefineJournalPartialAbbreviation{Lexicograf}{Lexicogr}
-\DefineJournalPartialAbbreviation{L\'epidopt\`er}{L\'epid}
 \DefineJournalAbbreviation{Libertad}{Lib}
 \DefineJournalAbbreviation{Libertador}{Libert}
 \DefineJournalAbbreviation{Licencia}{Licenc}
@@ -1002,8 +1081,8 @@
 \DefineJournalPartialAbbreviation{Lituan}{Litu}
 \DefineJournalAbbreviation{Locomoci\'on}{Locomoc}
 \DefineJournalAbbreviation{Locomotor}{Locomot}
-\DefineJournalAbbreviation{Longevidad}{Longev}
 \DefineJournalAbbreviation{L\'ogica}{Log}
+\DefineJournalAbbreviation{Longevidad}{Longev}
 \DefineJournalPartialAbbreviation{Lulian}{Lul}
 \DefineJournalPartialAbbreviation{Lullian}{Lul}
 \DefineJournalPartialAbbreviation{Luminotecnic}{Luminotec}
@@ -1022,6 +1101,7 @@
 \DefineJournalAbbreviation{Mancheg}{Manch}
 \DefineJournalAbbreviation{Manifesto}{Manif}
 \DefineJournalAbbreviation{Mantenimiento}{Manten}
+\DefineJournalPartialAbbreviation{Manualidad}{Manualid}
 \DefineJournalAbbreviation{Manutenci\'on}{Manut}
 \DefineJournalPartialAbbreviation{Maquill}{Maquill}
 \DefineJournalAbbreviation{Maravilloso}{Maravill}
@@ -1032,6 +1112,7 @@
 \DefineJournalAbbreviation{Marroquiner\'ia}{Marroquin}
 \DefineJournalAbbreviation{Mastolog\'ia}{Mastol}
 \DefineJournalAbbreviation{Mastozoolog\'ia}{Mastozool}
+\DefineJournalPartialAbbreviation{Matemat}{Mat}
 \DefineJournalPartialAbbreviation{Materia}{Mater}
 \DefineJournalPartialAbbreviation{Matricul}{Matricul}
 \DefineJournalAbbreviation{Matrimonio}{Matrim}
@@ -1041,26 +1122,31 @@
 \DefineJournalPartialAbbreviation{Mecani}{Mec}
 \DefineJournalAbbreviation{Mecenazgo}{Mecen}
 \DefineJournalAbbreviation{Mediaci\'on}{Mediac}
+\DefineJournalAbbreviation{M\'edico}{M\'ed}
+\DefineJournalAbbreviation{Medioambiental}{Medioambient}
+\DefineJournalAbbreviation{Mediterr\`ania}{Mediterr}
 \DefineJournalAbbreviation{Megal\'itico}{Megal\'it}
 \DefineJournalAbbreviation{Mejicana}{Mej}
 \DefineJournalPartialAbbreviation{Mejor}{Mejor}
 \DefineJournalPartialAbbreviation{Meliorac}{Melior}
-\DefineJournalAbbreviation{Memorie}{Mem}
+\DefineJournalPartialAbbreviation{Memor}{Mem}
 \DefineJournalPartialAbbreviation{Menaj}{Menaj}
 \DefineJournalPartialAbbreviation{Menopausi}{Menopaus}
 \DefineJournalAbbreviation{Menorqu\'in}{Menorq}
+\DefineJournalAbbreviation{Mensal}{Mens}
 \DefineJournalAbbreviation{Mercader}{Merc}
 \DefineJournalAbbreviation{Mercado}{Merc}
 \DefineJournalAbbreviation{Mercam\'etrico}{Mercam\'etr}
 \DefineJournalAbbreviation{Mercanc\'ia}{Merc}
 \DefineJournalPartialAbbreviation{Merceolog}{Merceol}
+\DefineJournalAbbreviation{Merindad}{Merind}
 \DefineJournalAbbreviation{Mesoamericana}{Mesoam}
 \DefineJournalPartialAbbreviation{Metalogen\'et}{Metalogen}
+\DefineJournalAbbreviation{Metalogenia}{Metalog}
 \DefineJournalPartialAbbreviation{Metalurg}{Metal}
 \DefineJournalAbbreviation{M\'etrica}{M\'etr}
 \DefineJournalAbbreviation{Metr\'opoli}{Metr\'op}
 \DefineJournalPartialAbbreviation{Mexic}{Mex}
-\DefineJournalAbbreviation{M\'edico}{M\'ed}
 \DefineJournalAbbreviation{Michoacano}{Michoac}
 \DefineJournalPartialAbbreviation{Micolog}{Micol}
 \DefineJournalAbbreviation{Microcirug\'ia}{Microcir}
@@ -1072,12 +1158,13 @@
 \DefineJournalAbbreviation{Migraci\'on}{Migr}
 \DefineJournalPartialAbbreviation{Milen}{Milen}
 \DefineJournalAbbreviation{Militancia}{Milit}
+\DefineJournalPartialAbbreviation{Militar}{Mil}
 \DefineJournalAbbreviation{Miner\'ia}{Min}
 \DefineJournalAbbreviation{Minero}{Min}
 \DefineJournalPartialAbbreviation{Miniplant}{Miniplant}
 \DefineJournalPartialAbbreviation{Minister}{Minist}
-\DefineJournalAbbreviation{Minusval\'ia}{Minusval}
 \DefineJournalAbbreviation{Min\'uscula}{Min\'usc}
+\DefineJournalAbbreviation{Minusval\'ia}{Minusval}
 \DefineJournalAbbreviation{Mirador}{Mirad}
 \DefineJournalPartialAbbreviation{Miscelan}{Misc}
 \DefineJournalAbbreviation{Misional}{Mision}
@@ -1087,6 +1174,7 @@
 \DefineJournalPartialAbbreviation{Modern}{Mod}
 \DefineJournalPartialAbbreviation{Moliner}{Molin}
 \DefineJournalPartialAbbreviation{Monarqui}{Monarq}
+\DefineJournalPartialAbbreviation{Monta\~n}{Mont}
 \DefineJournalAbbreviation{Montevideo}{Montev}
 \DefineJournalAbbreviation{Morbilidad}{Morbil}
 \DefineJournalAbbreviation{Morbosidad}{Morb}
@@ -1109,7 +1197,7 @@
 \DefineJournalAbbreviation{Musicoterapia}{Musicoter}
 \DefineJournalAbbreviation{Mutamento}{Mutam}
 \DefineJournalAbbreviation{Nacimiento}{Nacim}
-\DefineJournalAbbreviation{Naciones&nbsp;Unidas}{N&nbsp;U}
+\DefineJournalAbbreviation{Naciones Unidas}{N U}
 \DefineJournalAbbreviation{Narrador}{Narrad}
 \DefineJournalAbbreviation{Nataci\'on}{Natac}
 \DefineJournalAbbreviation{Natura}{Nat}
@@ -1126,6 +1214,7 @@
 \DefineJournalPartialAbbreviation{Neurocirug}{Neurocir}
 \DefineJournalPartialAbbreviation{Neurocirurg}{Neurocir}
 \DefineJournalPartialAbbreviation{Neuroinmunolog}{Neuroinmunol}
+\DefineJournalAbbreviation{Neuromental}{Neuroment}
 \DefineJournalPartialAbbreviation{Neuropatolog}{Neuropatol}
 \DefineJournalPartialAbbreviation{Neuropediatr\'i}{Neuropediatr}
 \DefineJournalPartialAbbreviation{Neuropsicol}{Neuropsicol}
@@ -1138,10 +1227,10 @@
 \DefineJournalPartialAbbreviation{Norteamerican}{Norteam}
 \DefineJournalPartialAbbreviation{Notici}{Not}
 \DefineJournalPartialAbbreviation{Notifica}{Notif}
+\DefineJournalAbbreviation{N\'otula}{N\'ot}
 \DefineJournalAbbreviation{Novedad}{Noved}
 \DefineJournalAbbreviation{Novidades}{Novid}
 \DefineJournalAbbreviation{Novohispana}{Novohisp}
-\DefineJournalAbbreviation{N\'otula}{N\'ot}
 \DefineJournalAbbreviation{N\`ucleo}{N\`ucl}
 \DefineJournalAbbreviation{Obesidad}{Obes}
 \DefineJournalPartialAbbreviation{Obispa}{Obisp}
@@ -1156,13 +1245,14 @@
 \DefineJournalAbbreviation{Ocultaci\'on}{Ocult}
 \DefineJournalPartialAbbreviation{Ocupaci\'on}{Ocup}
 \DefineJournalPartialAbbreviation{Ocurr}{Ocurr}
+\DefineJournalPartialAbbreviation{Odont\'alg}{Odont\'al}
 \DefineJournalPartialAbbreviation{Odontoestomatolog}{Odontoestomatol}
 \DefineJournalPartialAbbreviation{Odontotecni}{Odontotec}
 \DefineJournalPartialAbbreviation{Ofert}{Ofer}
+\DefineJournalPartialAbbreviation{Oftalmolog}{Oftalmol}
 \DefineJournalAbbreviation{Oftalmopat\'ia}{Oftalmop}
-\DefineJournalPartialAbbreviation{Oftal'molog}{Oftalmol}
-\DefineJournalPartialAbbreviation{Oleicultur}{Oleic}
 \DefineJournalAbbreviation{Ole\'icola}{Ole\'ic}
+\DefineJournalPartialAbbreviation{Oleicultur}{Oleic}
 \DefineJournalPartialAbbreviation{Olimp}{Ol\'imp}
 \DefineJournalPartialAbbreviation{Olivar}{Oliv}
 \DefineJournalPartialAbbreviation{Ondul}{Ondul}
@@ -1177,8 +1267,9 @@
 \DefineJournalAbbreviation{Ordenamento}{Ordenam}
 \DefineJournalPartialAbbreviation{Ordenan}{Ord}
 \DefineJournalAbbreviation{Ordinario}{Ordin}
-\DefineJournalAbbreviation{Organigrama}{Organigr}
 \DefineJournalPartialAbbreviation{Org\'anico}{Org}
+\DefineJournalAbbreviation{Organigrama}{Organigr}
+\DefineJournalAbbreviation{Orientacion}{Orientac}
 \DefineJournalAbbreviation{Or\'igen}{Or\'ig}
 \DefineJournalAbbreviation{Ort\'esico}{Ort\'es}
 \DefineJournalPartialAbbreviation{Ortodonc}{Ortod}
@@ -1199,6 +1290,7 @@
 \DefineJournalPartialAbbreviation{Paleopatolog}{Paleopatol}
 \DefineJournalPartialAbbreviation{Pal\'eop\'edolog}{Pal\'eop\'edol}
 \DefineJournalAbbreviation{Paliativo}{Paliat}
+\DefineJournalPartialAbbreviation{Palimpsest}{Na}
 \DefineJournalPartialAbbreviation{Panade}{Panad}
 \DefineJournalAbbreviation{Panor\'amico}{Panor}
 \DefineJournalAbbreviation{Papel}{Pap}
@@ -1216,6 +1308,7 @@
 \DefineJournalAbbreviation{Paridad}{Parid}
 \DefineJournalPartialAbbreviation{Parlament}{Parlam}
 \DefineJournalAbbreviation{Parodoncia}{Parod}
+\DefineJournalPartialAbbreviation{Paroxis}{Paroxis}
 \DefineJournalAbbreviation{Parque}{Parq}
 \DefineJournalPartialAbbreviation{Pasaj}{Pasaj}
 \DefineJournalAbbreviation{Pasaporte}{Pasapt}
@@ -1225,12 +1318,13 @@
 \DefineJournalAbbreviation{Patrimonio}{Patrim}
 \DefineJournalAbbreviation{Patronato}{Patron}
 \DefineJournalPartialAbbreviation{Peleter}{Pelet}
-\DefineJournalAbbreviation{Peligroso}{Peligr}
 \DefineJournalAbbreviation{Pel\'icula}{Pel\'ic}
+\DefineJournalAbbreviation{Peligroso}{Peligr}
 \DefineJournalPartialAbbreviation{Peluquer}{Peluquer}
 \DefineJournalPartialAbbreviation{Penal}{Penal}
 \DefineJournalPartialAbbreviation{Peninsul}{Penins}
 \DefineJournalPartialAbbreviation{Penitencia}{Penit}
+\DefineJournalAbbreviation{Pensamiento}{Pensam}
 \DefineJournalAbbreviation{Pensionado}{Pension}
 \DefineJournalAbbreviation{Perceptismo}{Percept}
 \DefineJournalPartialAbbreviation{Percus}{Percus}
@@ -1242,7 +1336,6 @@
 \DefineJournalAbbreviation{Periodismo}{Periodis}
 \DefineJournalPartialAbbreviation{Period\'ist}{Period\'is}
 \DefineJournalAbbreviation{Peronismo}{Peron}
-\DefineJournalPartialAbbreviation{Perspectiv}{Perspect}
 \DefineJournalPartialAbbreviation{Perten}{Perten}
 \DefineJournalPartialAbbreviation{Peruan}{Peru}
 \DefineJournalAbbreviation{Pervivencia}{Perviv}
@@ -1254,7 +1347,10 @@
 \DefineJournalAbbreviation{Pintura}{Pint}
 \DefineJournalPartialAbbreviation{Pirenaic}{Piren}
 \DefineJournalPartialAbbreviation{Pirin}{Pirin}
+\DefineJournalAbbreviation{Planeaci\'on}{Planeac}
+\DefineJournalAbbreviation{Planeamiento}{Planeam}
 \DefineJournalAbbreviation{Planejamento}{Planej}
+\DefineJournalAbbreviation{Plantaci\'on}{Plant}
 \DefineJournalAbbreviation{Planteamiento}{Planteam}
 \DefineJournalPartialAbbreviation{Pluviom\'etr}{Pluviom}
 \DefineJournalAbbreviation{Poblaci\'on}{Poblac}
@@ -1263,9 +1359,9 @@
 \DefineJournalAbbreviation{Pobreza}{Pobr}
 \DefineJournalPartialAbbreviation{Podiatri}{Podiatr}
 \DefineJournalAbbreviation{Pol\'emico}{Pol\'em}
+\DefineJournalAbbreviation{Polic\'ia}{Polic}
 \DefineJournalAbbreviation{Policiaco}{Polic}
 \DefineJournalAbbreviation{Policial}{Polic}
-\DefineJournalAbbreviation{Polic\'ia}{Polic}
 \DefineJournalPartialAbbreviation{Policlinic}{Policlin}
 \DefineJournalPartialAbbreviation{Polifon}{Polifon}
 \DefineJournalPartialAbbreviation{Politecni}{Politec}
@@ -1287,13 +1383,14 @@
 \DefineJournalAbbreviation{Prescripci\'on}{Prescr}
 \DefineJournalPartialAbbreviation{Prestac}{Prestac}
 \DefineJournalPartialAbbreviation{Presupuest}{Presup}
+\DefineJournalAbbreviation{Pretensado}{Pretens}
 \DefineJournalAbbreviation{Prevenci\'on}{Prev}
 \DefineJournalAbbreviation{Prevenir}{Prev}
 \DefineJournalAbbreviation{Primavera}{Primav}
 \DefineJournalPartialAbbreviation{Primer}{Prim}
+\DefineJournalAbbreviation{Pr\'incipe}{Pr\'inc}
 \DefineJournalAbbreviation{Principio}{Princ}
 \DefineJournalPartialAbbreviation{Privad}{Priv}
-\DefineJournalAbbreviation{Pr\'incipe}{Pr\'inc}
 \DefineJournalAbbreviation{Probabilidad}{Probab}
 \DefineJournalAbbreviation{Procedimiento}{Proced}
 \DefineJournalPartialAbbreviation{Procesam}{Proces}
@@ -1321,11 +1418,11 @@
 \DefineJournalPartialAbbreviation{Proteccion}{Prot}
 \DefineJournalAbbreviation{Protegido}{Prot}
 \DefineJournalPartialAbbreviation{Prot\'esic}{Prot\'es}
+\DefineJournalAbbreviation{Pr\'otesis}{Pr\'otes}
 \DefineJournalAbbreviation{Proveedor}{Proveed}
 \DefineJournalPartialAbbreviation{Proxect}{Proxec}
 \DefineJournalAbbreviation{Proyecci\'on}{Proyecc}
 \DefineJournalPartialAbbreviation{Proyect}{Proy}
-\DefineJournalAbbreviation{Pr\'otesis}{Pr\'otes}
 \DefineJournalPartialAbbreviation{Psicoanalis}{Psicoanal}
 \DefineJournalAbbreviation{Psicodiagn\'ostico}{Psicodiagn}
 \DefineJournalPartialAbbreviation{Psicodid\'acti}{Psicodid\'act}
@@ -1344,11 +1441,11 @@
 \DefineJournalAbbreviation{Publicidad}{Public}
 \DefineJournalPartialAbbreviation{Publicitar}{Public}
 \DefineJournalAbbreviation{Puericultor}{Pueric}
-\DefineJournalAbbreviation{Puerto&nbsp;Rico}{P&nbsp;R}
+\DefineJournalAbbreviation{Puerto Rico}{P R}
 \DefineJournalAbbreviation{Puertorrique\~no}{Puertorriq}
 \DefineJournalPartialAbbreviation{Pur\'ism}{Pur\'is}
 \DefineJournalPartialAbbreviation{Quemad}{Quemad}
-\DefineJournalPartialAbbreviation{Quimic}{Quim}
+\DefineJournalPartialAbbreviation{Qu\'imic}{Qu\'im}
 \DefineJournalPartialAbbreviation{Quimioterap}{Quimioter}
 \DefineJournalPartialAbbreviation{Quincen}{Quinc}
 \DefineJournalPartialAbbreviation{Quirurg}{Quir}
@@ -1358,7 +1455,7 @@
 \DefineJournalPartialAbbreviation{Radiotecni}{Radiotec}
 \DefineJournalPartialAbbreviation{Razon}{Razon}
 \DefineJournalAbbreviation{Reacci\'on}{Reacc}
-\DefineJournalAbbreviation{Real&nbsp;(royal)}{R}
+\DefineJournalAbbreviation{Real (royal)}{R}
 \DefineJournalPartialAbbreviation{Realidad}{Real}
 \DefineJournalPartialAbbreviation{Reanimac}{Reanim}
 \DefineJournalAbbreviation{Rebotica}{Rebot}
@@ -1371,6 +1468,7 @@
 \DefineJournalAbbreviation{Recompilaci\'on}{Recompil}
 \DefineJournalAbbreviation{Reconocimiento}{Reconoc}
 \DefineJournalAbbreviation{Reconquista}{Reconqu}
+\DefineJournalPartialAbbreviation{Reconstruct}{Reconstr}
 \DefineJournalAbbreviation{Recopilaci\'o}{Recopil}
 \DefineJournalAbbreviation{Recopilaci\'on}{Recopil}
 \DefineJournalAbbreviation{Rectificaci\'on}{Rectific}
@@ -1387,6 +1485,7 @@
 \DefineJournalPartialAbbreviation{Reforz}{Reforz}
 \DefineJournalPartialAbbreviation{Refresc}{Refresc}
 \DefineJournalPartialAbbreviation{Reglament}{Reglam}
+\DefineJournalAbbreviation{Reglamentaci\'on}{Reglam}
 \DefineJournalAbbreviation{Reglemento}{Reglem}
 \DefineJournalAbbreviation{Regulaci\'on}{Regul}
 \DefineJournalAbbreviation{Regulador}{Regul}
@@ -1395,21 +1494,22 @@
 \DefineJournalAbbreviation{Reinserci\'on}{Reinser}
 \DefineJournalAbbreviation{Reintegraci\'on}{Reintegr}
 \DefineJournalPartialAbbreviation{Relacion}{Relac}
+\DefineJournalAbbreviation{Rel\'ampago}{Rel\'amp}
 \DefineJournalPartialAbbreviation{Relatado}{Relat}
 \DefineJournalAbbreviation{Relativo}{Relat}
-\DefineJournalAbbreviation{Rel\'ampago}{Rel\'amp}
 \DefineJournalPartialAbbreviation{Relojer}{Reloj}
 \DefineJournalAbbreviation{Remedio}{Rem}
 \DefineJournalAbbreviation{Remuneraci\'on}{Remun}
 \DefineJournalAbbreviation{Renacentista}{Renacent}
 \DefineJournalAbbreviation{Rendimiento}{Rend}
+\DefineJournalAbbreviation{Rentabilidad}{Rentab}
 \DefineJournalAbbreviation{Reparaci\'on}{Repar}
 \DefineJournalAbbreviation{Reporte}{Rep}
 \DefineJournalAbbreviation{Reportero}{Report}
 \DefineJournalPartialAbbreviation{Reposter}{Repost}
 \DefineJournalPartialAbbreviation{Reproduc}{Reprod}
-\DefineJournalPartialAbbreviation{Republican}{Repub}
 \DefineJournalAbbreviation{Rep\'ublica}{Rep\'ub}
+\DefineJournalPartialAbbreviation{Republican}{Repub}
 \DefineJournalAbbreviation{Requerimiento}{Requer}
 \DefineJournalAbbreviation{Resoluci\'on}{Resoluc}
 \DefineJournalAbbreviation{Respiraci\'on}{Respir}
@@ -1424,10 +1524,11 @@
 \DefineJournalPartialAbbreviation{Reumat}{Reum}
 \DefineJournalPartialAbbreviation{Reumatolog}{Reumatol}
 \DefineJournalPartialAbbreviation{Reunid}{Reun}
+\DefineJournalPartialAbbreviation{Revist}{Rev}
 \DefineJournalAbbreviation{Revoluci\'on}{Revoluc}
 \DefineJournalAbbreviation{Revuo}{Rev}
 \DefineJournalAbbreviation{Rexional}{Rex}
-\DefineJournalAbbreviation{Rio&nbsp;Grande}{Rio&nbsp;Gd}
+\DefineJournalAbbreviation{Rio Grande}{Rio Gd}
 \DefineJournalAbbreviation{Riojana}{Rioja}
 \DefineJournalAbbreviation{Rioplatense}{Rioplat}
 \DefineJournalAbbreviation{Rodamiento}{Rodam}
@@ -1442,14 +1543,21 @@
 \DefineJournalAbbreviation{Salubridad}{Salubr}
 \DefineJournalPartialAbbreviation{Saludab}{Saludab}
 \DefineJournalPartialAbbreviation{Salvador}{Salvador}
-\DefineJournalAbbreviation{San&nbsp;Juan}{S&nbsp;Juan}
+\DefineJournalAbbreviation{San Juan}{S Juan}
 \DefineJournalAbbreviation{Sanidad}{Sanid}
+\DefineJournalAbbreviation{Sanmartiniano}{Sanmartin}
+\DefineJournalAbbreviation{Santa}{St}
+\DefineJournalAbbreviation{Santa Ana}{St Ana}
+\DefineJournalAbbreviation{Santa Cruz de la Palma}{St Cruz Palma}
+\DefineJournalAbbreviation{Santa-Cruz-de-Tenerife}{St-Cruz-de-Tenerife}
+\DefineJournalAbbreviation{Santa-Rosa}{St-Rosa}
 \DefineJournalAbbreviation{Santo}{St}
-\DefineJournalAbbreviation{Santo&nbsp;Domingo}{St&nbsp;Domingo}
+\DefineJournalAbbreviation{Santo Domingo}{St Domingo}
 \DefineJournalAbbreviation{Santuario}{St}
 \DefineJournalAbbreviation{Sat\'elite}{Sat\'el}
 \DefineJournalPartialAbbreviation{Seccion}{Secc}
 \DefineJournalPartialAbbreviation{Sector}{Sect}
+\DefineJournalPartialAbbreviation{Secundar}{Secund}
 \DefineJournalPartialAbbreviation{Sefaradi}{Sefarad}
 \DefineJournalPartialAbbreviation{Sefardi}{Sefard}
 \DefineJournalAbbreviation{Seguimiento}{Seguim}
@@ -1457,6 +1565,7 @@
 \DefineJournalAbbreviation{Seguridad}{Segur}
 \DefineJournalPartialAbbreviation{Seleccion}{Sel}
 \DefineJournalPartialAbbreviation{Semana}{Sem}
+\DefineJournalAbbreviation{Sensaci\'on}{Sensac}
 \DefineJournalAbbreviation{Sentencia}{Sentenc}
 \DefineJournalAbbreviation{Separata}{Sep}
 \DefineJournalPartialAbbreviation{Serigraf}{Serigr}
@@ -1474,16 +1583,19 @@
 \DefineJournalPartialAbbreviation{Simpos}{Simp}
 \DefineJournalAbbreviation{Simulaci\'on}{Simul}
 \DefineJournalAbbreviation{Sindical}{Sind}
+\DefineJournalAbbreviation{S\'indrome}{S\'indr}
 \DefineJournalPartialAbbreviation{Siniestral}{Siniestral}
 \DefineJournalPartialAbbreviation{Sinistral}{Sinistral}
 \DefineJournalAbbreviation{Sinopsis}{Sinop}
+\DefineJournalAbbreviation{Sint\'actico}{Sint\'act}
+\DefineJournalAbbreviation{Sintagma}{Sintag}
+\DefineJournalPartialAbbreviation{Sintax}{Sintax}
+\DefineJournalAbbreviation{S\'intesis}{Sint}
 \DefineJournalAbbreviation{Sirviendo}{Sirv}
+\DefineJournalAbbreviation{S\'ismico}{S\'ism}
 \DefineJournalPartialAbbreviation{Sismolog}{Sismol}
 \DefineJournalAbbreviation{Sist\=ema}{Sist}
 \DefineJournalAbbreviation{Situaci\'on}{Situac}
-\DefineJournalAbbreviation{S\'indrome}{S\'indr}
-\DefineJournalAbbreviation{S\'intesis}{Sint}
-\DefineJournalAbbreviation{S\'ismico}{S\'ism}
 \DefineJournalAbbreviation{Soberano}{Sober}
 \DefineJournalPartialAbbreviation{Sobreviv}{Sobreviv}
 \DefineJournalPartialAbbreviation{Sociedad}{Soc}
@@ -1517,6 +1629,7 @@
 \DefineJournalAbbreviation{Suecia}{Suec}
 \DefineJournalPartialAbbreviation{Sueroterap}{Sueroter}
 \DefineJournalAbbreviation{Sugerencia}{Suger}
+\DefineJournalAbbreviation{Suinotecnia}{Suinotec}
 \DefineJournalAbbreviation{Sulf\'urico}{Sulf\'ur}
 \DefineJournalPartialAbbreviation{Suministr}{Suminist}
 \DefineJournalAbbreviation{Superaci\'on}{Superac}
@@ -1549,9 +1662,10 @@
 \DefineJournalPartialAbbreviation{Teosof}{Teosof}
 \DefineJournalAbbreviation{Terceiro}{Terc}
 \DefineJournalPartialAbbreviation{Tercer}{Terc}
-\DefineJournalPartialAbbreviation{Termotecni}{Termotec}
-\DefineJournalPartialAbbreviation{Tesore}{Tesor}
 \DefineJournalAbbreviation{T\'ermico}{T\'erm}
+\DefineJournalPartialAbbreviation{Termotecni}{Termotec}
+\DefineJournalPartialAbbreviation{Territ}{Territ}
+\DefineJournalPartialAbbreviation{Tesore}{Tesor}
 \DefineJournalAbbreviation{Tintorer\'ia}{Tint}
 \DefineJournalAbbreviation{Tirador}{Tirad}
 \DefineJournalPartialAbbreviation{Tiroid}{Tiroid}
@@ -1566,11 +1680,13 @@
 \DefineJournalAbbreviation{Toluque\~no}{Toluq}
 \DefineJournalPartialAbbreviation{Trabaj}{Trab}
 \DefineJournalAbbreviation{Tracoma}{Trac}
-\DefineJournalPartialAbbreviation{Tradicion}{Tradic}
 \DefineJournalAbbreviation{Tradici\'on}{Tradic}
+\DefineJournalPartialAbbreviation{Tradicion}{Tradic}
 \DefineJournalAbbreviation{Traducci\'on}{Trad}
 \DefineJournalAbbreviation{Traductor}{Trad}
 \DefineJournalAbbreviation{Tradukita}{Trad}
+\DefineJournalPartialAbbreviation{Tr\'amit}{Tr\'am}
+\DefineJournalPartialAbbreviation{Transacci\'on}{Trans}
 \DefineJournalAbbreviation{Transferencia}{Transf}
 \DefineJournalPartialAbbreviation{Transic}{Transic}
 \DefineJournalAbbreviation{Transparente}{Transpar}
@@ -1581,11 +1697,11 @@
 \DefineJournalPartialAbbreviation{Tratamient}{Trat}
 \DefineJournalAbbreviation{Travesero}{Traves}
 \DefineJournalAbbreviation{Traves\'ia}{Traves}
-\DefineJournalPartialAbbreviation{Tr\'amit}{Tr\'am}
 \DefineJournalAbbreviation{Treball}{Treb}
 \DefineJournalPartialAbbreviation{Tribut}{Tribut}
 \DefineJournalAbbreviation{Trienio}{Trien}
 \DefineJournalPartialAbbreviation{Tripul}{Tripul}
+\DefineJournalPartialAbbreviation{Triunfador}{Triunf}
 \DefineJournalAbbreviation{Trombosis}{Trombos}
 \DefineJournalPartialAbbreviation{Tucuman}{Tucuman}
 \DefineJournalPartialAbbreviation{Tur\'is}{Tur}
@@ -1604,13 +1720,13 @@
 \DefineJournalPartialAbbreviation{Vallisoletan}{Vallisol}
 \DefineJournalAbbreviation{Valoraci\'on}{Valorac}
 \DefineJournalAbbreviation{Valparaiso}{Valpso}
+\DefineJournalAbbreviation{V\'alvula}{V\'alv}
 \DefineJournalPartialAbbreviation{Vanguard}{Vanguard}
 \DefineJournalAbbreviation{Variaci\'on}{Var}
 \DefineJournalAbbreviation{Variedad}{Var}
 \DefineJournalAbbreviation{Varios}{Var}
 \DefineJournalAbbreviation{Varsovia}{Vars}
 \DefineJournalPartialAbbreviation{Vascon}{Vascon}
-\DefineJournalAbbreviation{V\'alvula}{V\'alv}
 \DefineJournalPartialAbbreviation{Vecin}{Vecin}
 \DefineJournalAbbreviation{Vendedor}{Vend}
 \DefineJournalPartialAbbreviation{Venen}{Venen}

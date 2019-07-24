@@ -1,5 +1,5 @@
-%% Copyright 2010 Erich Hoover
-%% E-mail: ehoover@mines.edu
+%% Copyright 2010-2019 Erich E. Hoover
+%% E-mail: erich.e.hoover@gmail.com
 %% 
 %% =============================================
 %% IMPORTANT NOTICE:
@@ -11,15 +11,16 @@
 %%   http://www.latex-project.org/lppl.txt
 %% =============================================
 %% The List of Title Word Abbreviations below is automatically
-%% generatedfrom the ISSN LTWA database, publicly accessible from
+%% generated from the ISSN LTWA database, publicly accessible from
 %% their website:
 %%   http://www.issn.org/2-22660-LTWA.php
 
 \DefineJournalPartialAbbreviation{Abhor}{Abhor}
 \DefineJournalAbbreviation{Abolition}{Abolit}
-\DefineJournalPartialAbbreviation{Absolut}{Absol}
+\DefineJournalPartialAbbreviation{Absol\^ut}{Absol}
 \DefineJournalPartialAbbreviation{Accent}{Accent}
 \DefineJournalPartialAbbreviation{Accessib}{Access}
+\DefineJournalPartialAbbreviation{Accompl}{Accompl}
 \DefineJournalAbbreviation{Accumulation}{Accumul}
 \DefineJournalAbbreviation{Adjacent}{Adjac}
 \DefineJournalPartialAbbreviation{Administr}{Adm}
@@ -29,7 +30,7 @@
 \DefineJournalPartialAbbreviation{Adriatic}{Adriat}
 \DefineJournalPartialAbbreviation{Advokat}{Advok}
 \DefineJournalPartialAbbreviation{Aerodynam}{Aerodyn}
-\DefineJournalPartialAbbreviation{Aerolog}{Aerol}
+\DefineJournalPartialAbbreviation{A\`erolog}{Aerol}
 \DefineJournalPartialAbbreviation{Aeronauti}{Aeronaut}
 \DefineJournalPartialAbbreviation{Aeronom}{Aeron}
 \DefineJournalPartialAbbreviation{Aerophotograph}{Aerophotogr}
@@ -50,18 +51,21 @@
 \DefineJournalAbbreviation{Alaska}{Alsk}
 \DefineJournalPartialAbbreviation{Alcover}{Alcover}
 \DefineJournalAbbreviation{Alexandria}{Alex}
-\DefineJournalPartialAbbreviation{Algebr}{Algebr}
-\DefineJournalPartialAbbreviation{Algolog}{Algol}
+\DefineJournalPartialAbbreviation{\'Algebr}{Algebr}
+\DefineJournalPartialAbbreviation{Al'golog}{Algol}
 \DefineJournalPartialAbbreviation{Algoritm}{Algoritm}
 \DefineJournalPartialAbbreviation{Aliment}{Aliment}
 \DefineJournalPartialAbbreviation{Allergolog}{Allergol}
+\DefineJournalAbbreviation{\"Ambetsmannakommitt\'en}{\"Ambetsmannakomm}
 \DefineJournalPartialAbbreviation{Amelior}{Amelior}
+\DefineJournalPartialAbbreviation{Amerik}{Am}
 \DefineJournalPartialAbbreviation{Amfib}{Amfib}
 \DefineJournalPartialAbbreviation{Ampelolog}{Ampelol}
 \DefineJournalPartialAbbreviation{Amphibi}{Amphib}
 \DefineJournalPartialAbbreviation{Anabaptis}{Anabapt}
 \DefineJournalPartialAbbreviation{Analges}{Analg}
 \DefineJournalPartialAbbreviation{Analog}{Analog}
+\DefineJournalPartialAbbreviation{Analys}{Anal}
 \DefineJournalPartialAbbreviation{Anamnes}{Anamn}
 \DefineJournalPartialAbbreviation{Anatomi}{Anat}
 \DefineJournalPartialAbbreviation{Angeiolog}{Angeiol}
@@ -69,6 +73,7 @@
 \DefineJournalAbbreviation{Anglia}{Angl}
 \DefineJournalPartialAbbreviation{Annex}{Annex}
 \DefineJournalPartialAbbreviation{Anorgani}{Anorg}
+\DefineJournalPartialAbbreviation{Antagonism}{Antagon}
 \DefineJournalPartialAbbreviation{Antholog}{Anthol}
 \DefineJournalPartialAbbreviation{Anthropolog}{Anthropol}
 \DefineJournalPartialAbbreviation{Anthroposophisch}{Anthropos}
@@ -109,6 +114,7 @@
 \DefineJournalPartialAbbreviation{Attrib}{Attrib}
 \DefineJournalPartialAbbreviation{Audiolog}{Audiol}
 \DefineJournalPartialAbbreviation{Augment}{Augment}
+\DefineJournalPartialAbbreviation{Australi}{Aust}
 \DefineJournalPartialAbbreviation{Automat}{Autom}
 \DefineJournalPartialAbbreviation{Autonom}{Auton}
 \DefineJournalPartialAbbreviation{Autoradiograph}{Autoradiogr}
@@ -117,7 +123,7 @@
 \DefineJournalPartialAbbreviation{Auxolog}{Auxol}
 \DefineJournalPartialAbbreviation{Avicult}{Avic}
 \DefineJournalPartialAbbreviation{Azur}{Azur}
-\DefineJournalPartialAbbreviation{Balanc}{Balanc}
+\DefineJournalPartialAbbreviation{Balan\c c}{Balanc}
 \DefineJournalPartialAbbreviation{Ballot}{Ballot}
 \DefineJournalPartialAbbreviation{Balti}{Balt}
 \DefineJournalAbbreviation{Bangkok}{Bangk}
@@ -132,7 +138,7 @@
 \DefineJournalPartialAbbreviation{Biogen}{Biog}
 \DefineJournalPartialAbbreviation{Biogeograph}{Biogeogr}
 \DefineJournalPartialAbbreviation{Biograph}{Biogr}
-\DefineJournalPartialAbbreviation{Biolog}{Biol}
+\DefineJournalPartialAbbreviation{B\`iolog}{Biol}
 \DefineJournalPartialAbbreviation{Biomaterial}{Biomater}
 \DefineJournalPartialAbbreviation{Biomathemat}{Biomath}
 \DefineJournalPartialAbbreviation{Biomechani}{Biomech}
@@ -164,7 +170,7 @@
 \DefineJournalPartialAbbreviation{Cataract}{Cataract}
 \DefineJournalAbbreviation{Cavalcade}{Cavalc}
 \DefineJournalPartialAbbreviation{Celti}{Celt}
-\DefineJournalPartialAbbreviation{Central}{Cent}
+\DefineJournalPartialAbbreviation{Centr\=al}{Cent}
 \DefineJournalAbbreviation{Centrum}{Cent}
 \DefineJournalPartialAbbreviation{Chang}{Chang}
 \DefineJournalPartialAbbreviation{Charg}{Charg}
@@ -183,7 +189,7 @@
 \DefineJournalPartialAbbreviation{Cognit}{Cogn}
 \DefineJournalAbbreviation{Coloproctolog\'ia}{Coloproctol}
 \DefineJournalPartialAbbreviation{Color}{Color}
-\DefineJournalPartialAbbreviation{Comed}{Comed}
+\DefineJournalPartialAbbreviation{Com\'ed}{Comed}
 \DefineJournalAbbreviation{Comestible}{Comest}
 \DefineJournalPartialAbbreviation{Command}{Command}
 \DefineJournalPartialAbbreviation{Concert}{Concert}
@@ -204,8 +210,9 @@
 \DefineJournalPartialAbbreviation{Cosmi}{Cosm}
 \DefineJournalPartialAbbreviation{Cosmonaut}{Cosmonaut}
 \DefineJournalPartialAbbreviation{Cosmopolit}{Cosmop}
-\DefineJournalPartialAbbreviation{Creat}{Creat}
-\DefineJournalPartialAbbreviation{Credit}{Credit}
+\DefineJournalPartialAbbreviation{Cr\'eat}{Creat}
+\DefineJournalPartialAbbreviation{Credit}{Cr\'edit}
+\DefineJournalPartialAbbreviation{Critica}{Crit}
 \DefineJournalAbbreviation{Crochet}{Croch}
 \DefineJournalPartialAbbreviation{Crucif}{Crucif}
 \DefineJournalPartialAbbreviation{Crustac}{Crustac}
@@ -232,7 +239,9 @@
 \DefineJournalPartialAbbreviation{Diabetolog}{Diabetol}
 \DefineJournalPartialAbbreviation{Diagnos}{Diagn}
 \DefineJournalPartialAbbreviation{Dialekti}{Dialekt}
+\DefineJournalPartialAbbreviation{Dialektolog}{Dialektol}
 \DefineJournalPartialAbbreviation{Dialys}{Dial}
+\DefineJournalPartialAbbreviation{Didaskal}{Didask}
 \DefineJournalPartialAbbreviation{Dietet}{Diet}
 \DefineJournalPartialAbbreviation{Dietolog}{Dietol}
 \DefineJournalPartialAbbreviation{Digit}{Digit}
@@ -248,10 +257,10 @@
 \DefineJournalPartialAbbreviation{Duoden}{Duoden}
 \DefineJournalPartialAbbreviation{Duplicat}{Duplic}
 \DefineJournalPartialAbbreviation{Dynasti}{Dynast}
-\DefineJournalPartialAbbreviation{Econometri}{Econom}
-\DefineJournalPartialAbbreviation{Ekolog}{Ekol}
-\DefineJournalPartialAbbreviation{Ekonom}{Ekon}
-\DefineJournalPartialAbbreviation{Elabor}{Elabor}
+\DefineJournalPartialAbbreviation{Econometri}{\'Econom}
+\DefineJournalPartialAbbreviation{\`Ekolog}{Ekol}
+\DefineJournalPartialAbbreviation{Ekonom}{\`Ekon}
+\DefineJournalPartialAbbreviation{\'Elabor}{Elabor}
 \DefineJournalPartialAbbreviation{Elastoplasti}{Elastoplast}
 \DefineJournalPartialAbbreviation{Electrofisiolog}{Electrofisiol}
 \DefineJournalPartialAbbreviation{Electroimmunochemi}{Eletroimmunochem}
@@ -265,24 +274,25 @@
 \DefineJournalPartialAbbreviation{Endothel}{Endothel}
 \DefineJournalPartialAbbreviation{Endourolog}{Endourol}
 \DefineJournalPartialAbbreviation{Endur}{Endur}
-\DefineJournalPartialAbbreviation{Energet}{Energ}
+\DefineJournalPartialAbbreviation{\`Energet}{Energ}
 \DefineJournalAbbreviation{Energistatistik}{Energistat}
 \DefineJournalPartialAbbreviation{Enterolog}{Enterol}
-\DefineJournalPartialAbbreviation{Entomolog}{Entomol}
+\DefineJournalPartialAbbreviation{Entomolog}{\`Entomol}
 \DefineJournalPartialAbbreviation{Envelop}{Envel}
 \DefineJournalPartialAbbreviation{Enzymolog}{Enzymol}
-\DefineJournalPartialAbbreviation{Epidemiolog}{Epidemiol}
+\DefineJournalPartialAbbreviation{\`Epidemiolog}{Epidemiol}
 \DefineJournalPartialAbbreviation{Epigraph}{Epigr}
 \DefineJournalPartialAbbreviation{Epileptolog}{Epileptol}
 \DefineJournalPartialAbbreviation{Epiphyti}{Epiphyt}
 \DefineJournalPartialAbbreviation{Epizooti}{Epizoot}
 \DefineJournalPartialAbbreviation{Epizootolog}{Epizootol}
+\DefineJournalPartialAbbreviation{Ergonom}{Ergon}
 \DefineJournalAbbreviation{Erotika}{Erot}
 \DefineJournalPartialAbbreviation{Erythropoiet}{Erythrop}
 \DefineJournalPartialAbbreviation{Eslastom}{Eslastom}
-\DefineJournalPartialAbbreviation{Esophagolog}{Esophagol}
+\DefineJournalPartialAbbreviation{Esophagolog}{\'Esophagol}
 \DefineJournalPartialAbbreviation{Esoteri}{Esoter}
-\DefineJournalPartialAbbreviation{Espac}{Espac}
+\DefineJournalPartialAbbreviation{Espac}{Espa\c c}
 \DefineJournalAbbreviation{Esterior}{Ester}
 \DefineJournalPartialAbbreviation{Estheti}{Esthet}
 \DefineJournalPartialAbbreviation{Ethnograph}{Ethnogr}
@@ -292,6 +302,7 @@
 \DefineJournalPartialAbbreviation{Etiolog}{Etiol}
 \DefineJournalPartialAbbreviation{Europ}{Eur}
 \DefineJournalAbbreviation{Euroregion}{Euroreg}
+\DefineJournalAbbreviation{Eurostandard}{Eurostand}
 \DefineJournalPartialAbbreviation{Eurostat}{Eurostat}
 \DefineJournalAbbreviation{Eurovision}{Eurovis}
 \DefineJournalPartialAbbreviation{Euthanas}{Euthan}
@@ -306,9 +317,11 @@
 \DefineJournalPartialAbbreviation{Expecta}{Expect}
 \DefineJournalPartialAbbreviation{Expert}{Expert}
 \DefineJournalPartialAbbreviation{Fakult}{Fak}
+\DefineJournalPartialAbbreviation{Fantast}{Fantast}
 \DefineJournalPartialAbbreviation{Fatal}{Fatal}
 \DefineJournalPartialAbbreviation{Femin}{Fem}
 \DefineJournalPartialAbbreviation{Fenomen}{Fenom}
+\DefineJournalPartialAbbreviation{Fertili}{Fertil}
 \DefineJournalPartialAbbreviation{Filateli}{Filat}
 \DefineJournalPartialAbbreviation{Filmogr}{Filmogr}
 \DefineJournalPartialAbbreviation{Filmologic}{Filmol}
@@ -332,18 +345,19 @@
 \DefineJournalPartialAbbreviation{Gemellolog}{Gemellol}
 \DefineJournalPartialAbbreviation{Gemmolog}{Gemmol}
 \DefineJournalAbbreviation{Genagogue}{Genagog}
+\DefineJournalPartialAbbreviation{Genealog}{Geneal}
 \DefineJournalPartialAbbreviation{Generat}{Gener}
 \DefineJournalAbbreviation{Genesis}{Genes}
 \DefineJournalPartialAbbreviation{Genesung}{Genes}
 \DefineJournalPartialAbbreviation{Genet}{Genet}
 \DefineJournalPartialAbbreviation{Geobotan}{Geobot}
-\DefineJournalPartialAbbreviation{Geodes}{Geod}
-\DefineJournalPartialAbbreviation{Geodet}{Geod}
+\DefineJournalPartialAbbreviation{G\'eod\'es}{G\'eod}
+\DefineJournalPartialAbbreviation{Geodet}{G\'eod}
 \DefineJournalAbbreviation{Geoindustria}{Geoind}
 \DefineJournalPartialAbbreviation{Geolog}{Geol}
 \DefineJournalPartialAbbreviation{Geomagneti}{Geomagn}
 \DefineJournalAbbreviation{Geomathematic}{Geomath}
-\DefineJournalPartialAbbreviation{Geomechani}{Geomech}
+\DefineJournalPartialAbbreviation{Geomechani}{G\'eom\'ech}
 \DefineJournalPartialAbbreviation{Geometr}{Geom}
 \DefineJournalPartialAbbreviation{Geoscien}{Geosci}
 \DefineJournalAbbreviation{Geosphaera}{Geosph}
@@ -359,6 +373,7 @@
 \DefineJournalPartialAbbreviation{Grapholog}{Graphol}
 \DefineJournalAbbreviation{Graveur}{Grav}
 \DefineJournalPartialAbbreviation{Gravimetr}{Gravim}
+\DefineJournalAbbreviation{Guinea-Bissau}{Guin-Bissau}
 \DefineJournalPartialAbbreviation{Guitar}{Guitar}
 \DefineJournalPartialAbbreviation{Habilitat}{Habilit}
 \DefineJournalPartialAbbreviation{Handelsstatisti}{Handelsstat}
@@ -404,7 +419,7 @@
 \DefineJournalPartialAbbreviation{Imperia}{Imp}
 \DefineJournalPartialAbbreviation{Implantolog}{Implantol}
 \DefineJournalAbbreviation{Impregnation}{Impregn}
-\DefineJournalAbbreviation{Inalienable}{Inalien}
+\DefineJournalAbbreviation{Inali\'enable}{Inalien}
 \DefineJournalPartialAbbreviation{Incendi}{Incend}
 \DefineJournalPartialAbbreviation{Indemnit}{Indemn}
 \DefineJournalPartialAbbreviation{Individ}{Individ}
@@ -421,13 +436,14 @@
 \DefineJournalPartialAbbreviation{Inser}{Inser}
 \DefineJournalAbbreviation{Institut}{Inst}
 \DefineJournalAbbreviation{Institution}{Inst}
+\DefineJournalAbbreviation{Integration}{Integr}
 \DefineJournalPartialAbbreviation{Intelektual}{Intelekt}
 \DefineJournalAbbreviation{Intelligent}{Intell}
 \DefineJournalPartialAbbreviation{Interchang}{Interchang}
 \DefineJournalAbbreviation{Interlingua}{Interling}
 \DefineJournalAbbreviation{Internat}{Intern}
 \DefineJournalAbbreviation{Interpanorama}{Interpanor}
-\DefineJournalPartialAbbreviation{Interpret}{Interpret}
+\DefineJournalPartialAbbreviation{Interpr\`et}{Interpret}
 \DefineJournalPartialAbbreviation{Intersection}{Intersect}
 \DefineJournalPartialAbbreviation{Interven}{Interv}
 \DefineJournalPartialAbbreviation{Investiga}{Investig}
@@ -464,7 +480,7 @@
 \DefineJournalPartialAbbreviation{Lichenolog}{Lichenol}
 \DefineJournalAbbreviation{Licitation}{Licit}
 \DefineJournalPartialAbbreviation{Limnolog}{Limnol}
-\DefineJournalPartialAbbreviation{Linguist}{Linguist}
+\DefineJournalPartialAbbreviation{Ling\"u\'ist}{Linguist}
 \DefineJournalPartialAbbreviation{Literat}{Lit}
 \DefineJournalPartialAbbreviation{Lithograph}{Lithogr}
 \DefineJournalPartialAbbreviation{Litholog}{Lithol}
@@ -480,15 +496,16 @@
 \DefineJournalPartialAbbreviation{Magmati}{Magmat}
 \DefineJournalAbbreviation{Magnesium}{Magnes}
 \DefineJournalPartialAbbreviation{Magneti}{Magn}
-\DefineJournalPartialAbbreviation{Magnetohydrodynami}{Magnetohydrodyn}
-\DefineJournalPartialAbbreviation{Magnetoplasmadynami}{Magnetoplasmadyn}
+\DefineJournalPartialAbbreviation{Magnetohydrodynami}{Magn\'etohydrodyn}
+\DefineJournalPartialAbbreviation{Magnetoplasmadynami}{Magn\'etoplasmadyn}
 \DefineJournalPartialAbbreviation{Maket}{Maket}
 \DefineJournalPartialAbbreviation{Malariolog}{Malariol}
 \DefineJournalPartialAbbreviation{Manag}{Manag}
 \DefineJournalPartialAbbreviation{Marx}{Marx}
 \DefineJournalPartialAbbreviation{Matern}{Matern}
 \DefineJournalPartialAbbreviation{Medicament}{Medicam}
-\DefineJournalAbbreviation{Meditation}{Medit}
+\DefineJournalPartialAbbreviation{Medic\=in}{Med}
+\DefineJournalAbbreviation{M\'editation}{Medit}
 \DefineJournalPartialAbbreviation{Mekani}{Mek}
 \DefineJournalPartialAbbreviation{Melanes}{Melanes}
 \DefineJournalPartialAbbreviation{Mercat}{Mercat}
@@ -520,7 +537,7 @@
 \DefineJournalAbbreviation{Mobilo}{Mob}
 \DefineJournalPartialAbbreviation{Modifi}{Modif}
 \DefineJournalPartialAbbreviation{Monarch}{Monarch}
-\DefineJournalPartialAbbreviation{Monet}{Monet}
+\DefineJournalPartialAbbreviation{Mon\'et}{Monet}
 \DefineJournalPartialAbbreviation{Monolith}{Monolith}
 \DefineJournalAbbreviation{Monologue}{Monolog}
 \DefineJournalPartialAbbreviation{Monopol}{Monop}
@@ -530,8 +547,10 @@
 \DefineJournalPartialAbbreviation{Multicultur}{Multicult}
 \DefineJournalPartialAbbreviation{Multidimension}{Multidimens}
 \DefineJournalPartialAbbreviation{Multiethnic}{Multiethn}
-\DefineJournalAbbreviation{Multimedia}{Multimed}
+\DefineJournalPartialAbbreviation{Multietn}{Multietn}
+\DefineJournalAbbreviation{Multim\'edia}{Multimed}
 \DefineJournalAbbreviation{Multiprint}{Multipr}
+\DefineJournalPartialAbbreviation{Museolog}{Museol}
 \DefineJournalAbbreviation{Musette}{Muset}
 \DefineJournalAbbreviation{Myocardium}{Myocard}
 \DefineJournalPartialAbbreviation{Myograph}{Myogr}
@@ -577,7 +596,7 @@
 \DefineJournalPartialAbbreviation{Objecti}{Object}
 \DefineJournalPartialAbbreviation{Observ}{Obs}
 \DefineJournalPartialAbbreviation{Obstetri}{Obstet}
-\DefineJournalPartialAbbreviation{Ocean}{Ocean}
+\DefineJournalPartialAbbreviation{Oc\'ean}{Ocean}
 \DefineJournalAbbreviation{Odalisque}{Odal}
 \DefineJournalPartialAbbreviation{Odbor}{Odbor}
 \DefineJournalPartialAbbreviation{Odontoiatri}{Odontoiatr}
@@ -604,8 +623,8 @@
 \DefineJournalPartialAbbreviation{Otorhinolaryngolog}{Otorhinolaryngol}
 \DefineJournalPartialAbbreviation{Pacifist}{Pacif}
 \DefineJournalPartialAbbreviation{Paleodont}{Paleodont}
-\DefineJournalPartialAbbreviation{Paleontograph}{Paleontogr}
-\DefineJournalPartialAbbreviation{Paleontolog}{Paleontol}
+\DefineJournalPartialAbbreviation{Paleontograph}{Pal\'eontogr}
+\DefineJournalPartialAbbreviation{Paleontolog}{Pal\'eontol}
 \DefineJournalPartialAbbreviation{Paleotectonic}{Paleotecton}
 \DefineJournalPartialAbbreviation{Palestin}{Palest}
 \DefineJournalPartialAbbreviation{Palmyr}{Palmyr}
@@ -619,7 +638,7 @@
 \DefineJournalPartialAbbreviation{Parachut}{Parachut}
 \DefineJournalPartialAbbreviation{Paralis}{Paralis}
 \DefineJournalPartialAbbreviation{Paramagn}{Paramagn}
-\DefineJournalPartialAbbreviation{Paramedic}{Paramed}
+\DefineJournalPartialAbbreviation{Param\'edic}{Paramed}
 \DefineJournalPartialAbbreviation{Parametr}{Parametr}
 \DefineJournalAbbreviation{Paranormal}{Paranorm}
 \DefineJournalPartialAbbreviation{Parapsycholog}{Parapsychol}
@@ -644,6 +663,7 @@
 \DefineJournalPartialAbbreviation{Periodontolog}{Periodontol}
 \DefineJournalAbbreviation{Permaculture}{Permac}
 \DefineJournalPartialAbbreviation{Person}{Pers}
+\DefineJournalPartialAbbreviation{Perspectiv}{Perspect}
 \DefineJournalPartialAbbreviation{Petrolog}{Petrol}
 \DefineJournalPartialAbbreviation{Pharmacodynam}{Pharmacodyn}
 \DefineJournalPartialAbbreviation{Phenomenolog}{Phenomenol}
@@ -652,6 +672,7 @@
 \DefineJournalPartialAbbreviation{Philomathi}{Philomath}
 \DefineJournalPartialAbbreviation{Philosoph}{Philos}
 \DefineJournalPartialAbbreviation{Phlebolog}{Phlebol}
+\DefineJournalPartialAbbreviation{Phoniatri}{Phoniatr}
 \DefineJournalPartialAbbreviation{Phonolog}{Phonol}
 \DefineJournalPartialAbbreviation{Photobiolog}{Photobiol}
 \DefineJournalPartialAbbreviation{Photocop}{Photocop}
@@ -677,9 +698,10 @@
 \DefineJournalPartialAbbreviation{Phytoparasit}{Phytoparasit}
 \DefineJournalPartialAbbreviation{Phytopatholog}{Phytopathol}
 \DefineJournalPartialAbbreviation{Phytotaxonom}{Phytotaxon}
-\DefineJournalPartialAbbreviation{Phytotherap}{Phytother}
+\DefineJournalPartialAbbreviation{Phytoth\'erap}{Phytother}
 \DefineJournalPartialAbbreviation{Pigment}{Pigment}
 \DefineJournalPartialAbbreviation{Pilot}{Pilot}
+\DefineJournalPartialAbbreviation{Pinta}{Pint}
 \DefineJournalPartialAbbreviation{Plakat}{Plakat}
 \DefineJournalPartialAbbreviation{Planif}{Planif}
 \DefineJournalPartialAbbreviation{Plasti}{Plast}
@@ -692,7 +714,7 @@
 \DefineJournalPartialAbbreviation{Poet}{Poet}
 \DefineJournalPartialAbbreviation{Polarograph}{Polarogr}
 \DefineJournalAbbreviation{Polen}{Pol}
-\DefineJournalPartialAbbreviation{Politi}{Polit}
+\DefineJournalPartialAbbreviation{Polycondensat}{Polycondens}
 \DefineJournalAbbreviation{Polysaccharide}{Polysacch}
 \DefineJournalPartialAbbreviation{Pontifi}{Pontif}
 \DefineJournalPartialAbbreviation{Popular}{Pop}
@@ -700,8 +722,9 @@
 \DefineJournalPartialAbbreviation{Postmagmati}{Postmagmat}
 \DefineJournalPartialAbbreviation{Prakt}{Prakt}
 \DefineJournalPartialAbbreviation{Praximetr}{Praxim}
+\DefineJournalAbbreviation{Praxis}{Prax}
 \DefineJournalPartialAbbreviation{Prefabric}{Prefabr}
-\DefineJournalPartialAbbreviation{Prefac}{Pref}
+\DefineJournalPartialAbbreviation{Pr\'efac}{Pref}
 \DefineJournalAbbreviation{Pression}{Press}
 \DefineJournalPartialAbbreviation{Prestig}{Prestig}
 \DefineJournalPartialAbbreviation{Primatolog}{Primatol}
@@ -734,7 +757,7 @@
 \DefineJournalPartialAbbreviation{Psychotrop}{Psychotr}
 \DefineJournalPartialAbbreviation{Pyrometr}{Pyrom}
 \DefineJournalPartialAbbreviation{Quantit}{Quant}
-\DefineJournalPartialAbbreviation{Radioamat}{Radioamat}
+\DefineJournalPartialAbbreviation{R\'adi\'oamat}{Radioamat}
 \DefineJournalPartialAbbreviation{Radioanaly}{Radioanal}
 \DefineJournalPartialAbbreviation{Radioastronom}{Radioastron}
 \DefineJournalPartialAbbreviation{Radiobiolog}{Radiobiol}
@@ -763,7 +786,7 @@
 \DefineJournalPartialAbbreviation{Region}{Reg}
 \DefineJournalPartialAbbreviation{Regist}{Regist}
 \DefineJournalPartialAbbreviation{Regulament}{Regulam}
-\DefineJournalPartialAbbreviation{Rehabilitat}{Rehabil}
+\DefineJournalPartialAbbreviation{R\'ehabilitat}{Rehabil}
 \DefineJournalPartialAbbreviation{Relev}{Relev}
 \DefineJournalAbbreviation{Renaissance}{Renaiss}
 \DefineJournalAbbreviation{Rendement}{Rend}
@@ -772,6 +795,7 @@
 \DefineJournalPartialAbbreviation{Republik}{Repub}
 \DefineJournalPartialAbbreviation{Reserv}{Reserv}
 \DefineJournalPartialAbbreviation{Residenc}{Resid}
+\DefineJournalPartialAbbreviation{Responsab}{Responsab}
 \DefineJournalPartialAbbreviation{Restaurant}{Restaur}
 \DefineJournalPartialAbbreviation{Retard}{Retard}
 \DefineJournalAbbreviation{Retrovirus}{Retrovir}
@@ -791,7 +815,7 @@
 \DefineJournalAbbreviation{Saccharide}{Sacch}
 \DefineJournalPartialAbbreviation{Sacrific}{Sacrif}
 \DefineJournalAbbreviation{Sammenslutning}{Sammenslut}
-\DefineJournalAbbreviation{San&nbsp;Francisco}{San&nbsp;Franc}
+\DefineJournalAbbreviation{San Francisco}{San Franc}
 \DefineJournalAbbreviation{Sanctus}{St}
 \DefineJournalPartialAbbreviation{Satisf}{Satisf}
 \DefineJournalPartialAbbreviation{Scandic}{Scand}
@@ -819,7 +843,7 @@
 \DefineJournalPartialAbbreviation{Silent}{Silent}
 \DefineJournalPartialAbbreviation{Singul}{Singul}
 \DefineJournalPartialAbbreviation{Sinolog}{Sinol}
-\DefineJournalPartialAbbreviation{Skol}{Sk}
+\DefineJournalPartialAbbreviation{\v Skol}{Sk}
 \DefineJournalPartialAbbreviation{Slovakist}{Slovak}
 \DefineJournalPartialAbbreviation{Sociocultur}{Sociocult}
 \DefineJournalPartialAbbreviation{Sonor}{Son}
@@ -830,7 +854,7 @@
 \DefineJournalPartialAbbreviation{Spermatolog}{Spermatol}
 \DefineJournalPartialAbbreviation{Splenolog}{Splenol}
 \DefineJournalAbbreviation{Square}{Sq}
-\DefineJournalAbbreviation{Stalinism-&nbsp;}{Stalin}
+\DefineJournalAbbreviation{Stalinism- }{Stalin}
 \DefineJournalPartialAbbreviation{Statist}{Stat}
 \DefineJournalPartialAbbreviation{Stereolog}{Stereol}
 \DefineJournalPartialAbbreviation{Stereophon}{Stereoph}
@@ -881,12 +905,12 @@
 \DefineJournalPartialAbbreviation{Thalass}{Thalass}
 \DefineJournalPartialAbbreviation{Thanatolog}{Thanatol}
 \DefineJournalAbbreviation{Theknos}{Thek}
-\DefineJournalPartialAbbreviation{Theriolog}{Theriol}
+\DefineJournalPartialAbbreviation{Theriolog}{Th\'eriol}
 \DefineJournalPartialAbbreviation{Thermobiolog}{Thermobiol}
 \DefineJournalPartialAbbreviation{Thermograph}{Thermogr}
 \DefineJournalPartialAbbreviation{Thermolog}{Thermol}
 \DefineJournalPartialAbbreviation{Thermometr}{Thermom}
-\DefineJournalPartialAbbreviation{Thermoregulat}{Thermoregul}
+\DefineJournalPartialAbbreviation{Thermoregulat}{Thermor\'egul}
 \DefineJournalPartialAbbreviation{Thrombos}{Thromb}
 \DefineJournalPartialAbbreviation{Thyroid}{Thyroid}
 \DefineJournalPartialAbbreviation{Tibet}{Tibet}
@@ -896,6 +920,7 @@
 \DefineJournalPartialAbbreviation{Toxicom}{Toxicom}
 \DefineJournalPartialAbbreviation{Trachom}{Trach}
 \DefineJournalPartialAbbreviation{Tradition}{Tradit}
+\DefineJournalPartialAbbreviation{Transact}{Trans}
 \DefineJournalPartialAbbreviation{Transform}{Transform}
 \DefineJournalPartialAbbreviation{Transfront}{Transfront}
 \DefineJournalPartialAbbreviation{Trasplant}{Traspl}
@@ -930,6 +955,7 @@
 \DefineJournalPartialAbbreviation{Vigilanc}{Vigil}
 \DefineJournalPartialAbbreviation{Violin}{Violin}
 \DefineJournalPartialAbbreviation{Virolog}{Virol}
+\DefineJournalAbbreviation{Visayas}{Vis}
 \DefineJournalPartialAbbreviation{Vitamini}{Vitam}
 \DefineJournalPartialAbbreviation{Vitaminolog}{Vitaminol}
 \DefineJournalPartialAbbreviation{Volum}{Vol}
@@ -940,11 +966,12 @@
 \DefineJournalPartialAbbreviation{Yiddish}{Yid}
 \DefineJournalPartialAbbreviation{Yidish}{Yid}
 \DefineJournalPartialAbbreviation{Zagreb}{Zagreb}
+\DefineJournalPartialAbbreviation{Zaklad}{Zakl}
 \DefineJournalPartialAbbreviation{Zeland}{Zeland}
 \DefineJournalAbbreviation{Zimbabwe}{Zimb}
 \DefineJournalAbbreviation{Zirconium}{Zircon}
 \DefineJournalPartialAbbreviation{Zna\v c}{Zna\v c}
-\DefineJournalPartialAbbreviation{Zoolog}{Zool}
+\DefineJournalPartialAbbreviation{Zoolog}{Zo\"ol}
 \DefineJournalPartialAbbreviation{Zoophysiolog}{Zoophysiol}
 \DefineJournalPartialAbbreviation{Zooveterinar}{Zoovet}
 \DefineJournalPartialAbbreviation{Zymolog}{Zymol}
