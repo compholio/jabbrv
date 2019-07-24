@@ -132,26 +132,28 @@
 	\jabbrv@comma%
 }
 
-% Redefinitions for diacritical marks so that they can be processed as command names
+% Redefinitions for diacritical marks (ignored by ISO-4) and unusual symbols so that they can be
+% processed as command names
+\def\journal@char@empty{\@gobble X} % cannot be empty or it will match \journal@char@stop
 \def\jabbrv@redefine@diacritic{%
-	\def\`{@GRAVEACCENT@}%
-	\def\'{@ACUTEACCENT@}%
-	\def\^{@CIRCUMFLEX@}%
-	\def\"{@UMLAUT@}%
-	\def\={@MACRONACCENT@}%
+	\let\`\journal@char@empty% grave accent
+	\let\'\journal@char@empty% accute accent
+	\let\^\journal@char@empty% circumflex
+	\let\"\journal@char@empty% umlaut
+	\let\=\journal@char@empty% macron accent
+	\let\c\journal@char@empty% cedilla
+	\let\t\journal@char@empty% tie
+	\let\v\journal@char@empty% caron
 	\def\~{@TILDE@}%
 	\def\aa{@RINGa@}%
 	\def\AA{@RINGA@}%
 	\def\ae{@aeDIPHTHONG@}%
 	\def\AE{@AEDIPHTHONG@}%
-	\def\c{@CEDILLA@}%
 	\def\o{@SLASHo@}%
 	\def\O{@SLASHO@}%
 	\def\oe{@oeDIPHTHONG@}%
 	\def\OE{@OEDIPHTHONG@}%
 	\def\ss{@ESZETT@}%
-	\def\t{@TIE@}%
-	\def\v{@CARON@}%
 	\def\&{@AND@}%
 	% Custom \J@C may be called directly or defined through \textcommabelow:
 	\def\J@C{@JABBRVCOMMA@}%
