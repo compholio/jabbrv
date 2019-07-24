@@ -8,17 +8,17 @@ OUTPUT_FILE="jabbrv-ltwa-${UNIX_LANG}.ldf";
 # (to save processing time for my poor computer)
 #            \`              \'              \^              \~              \=
 REPLACECHAR=('\(.\)\xCC\x80' '\(.\)\xCC\x81' '\(.\)\xCC\x82' '\(.\)\xCC\x83' '\(.\)\xCC\x84' \
-#            \.
-             '\(.\)\xCC\x87'                                                                 \
+#            \u              \.
+             '\(.\)\xCC\x86' '\(.\)\xCC\x87'                                                 \
 #            \"              \v              \J@C            \c
              '\(.\)\xCC\x88' '\(.\)\xCC\x8C' '\(.\)\xCC\xA1' '\(.\)\xCC\xA7'                 \
-#            \oe
-             'œ'                                                                             \
+#            \oe             \textlefthalfring
+             'œ'             'ʿ'                                                             \
              'ʹ');
 REPLACEMENT=('\\`\1'         "\\\\'\1"       '\\^\1'         '\\~\1'         '\\=\1'         \
-             '\\.\1'                                                                         \
+             '\\u \1'        '\\.\1'                                                         \
              '\\"\1'         '\\v \1'        '\\J@C \1'      '\\c \1'                        \
-             '\\oe '                                                                         \
+             '\\oe '         '\\textlefthalfring '                                           \
              "'");
 REPLACE_RULES="";
 MAXRULES=$((${#REPLACECHAR[@]}-1));
@@ -29,12 +29,14 @@ done
 REPLACE_ODD="";
 # almost the entire LTWA uses "combining" diacritical marks, except for limited instances of:
 REPLACE_ODD="${REPLACE_ODD};s/Â/A\xCC\x82/g"; # capital A with circumflex (Â)
+REPLACE_ODD="${REPLACE_ODD};s/á/a\xCC\x81/g"; # lowercase a with acute accent (á)
 REPLACE_ODD="${REPLACE_ODD};s/ā/a\xCC\x84/g"; # lowercase a with overline (ā)
 REPLACE_ODD="${REPLACE_ODD};s/ä/a\xCC\x88/g"; # lowercase a with umlauts (ä)
 REPLACE_ODD="${REPLACE_ODD};s/è/e\xCC\x80/g"; # lowercase e with backtick (è)
 REPLACE_ODD="${REPLACE_ODD};s/é/e\xCC\x81/g"; # lowercase e with forward tick (é)
 REPLACE_ODD="${REPLACE_ODD};s/ì/i\xCC\x80/g"; # lowercase i with backtick (ì)
 REPLACE_ODD="${REPLACE_ODD};s/í/i\xCC\x81/g"; # lowercase i with forward tick (í)
+REPLACE_ODD="${REPLACE_ODD};s/ñ/n\xCC\x84/g"; # lowercase n with overline (ñ)
 REPLACE_ODD="${REPLACE_ODD};s/Ö/O\xCC\x88/g"; # capital O with umlauts (Ö)
 REPLACE_ODD="${REPLACE_ODD};s/ó/o\xCC\x81/g"; # lowercase o with forward tick (ó)
 REPLACE_ODD="${REPLACE_ODD};s/ö/o\xCC\x88/g"; # lowercase o with umlauts (ö)
@@ -43,8 +45,9 @@ REPLACE_ODD="${REPLACE_ODD};s/û/u\xCC\x82/g"; # lowercase u with circumflex (û
 REPLACE_ODD="${REPLACE_ODD};s/ü/u\xCC\x88/g"; # lowercase u with umlauts (ü)
 REPLACE_ODD="${REPLACE_ODD};s/š/s\xCC\x8C/g"; # lowercase s with caron (š)
 
-# remove all the "Not Applicable" entries from the list
-REPLACE_NA="/.*\tn.a.\t.*/d";
+# replace the "Not Applicable" entries with something that can easily be distinguished from normal
+# abbreviations (we remove all periods, so n.a. becomes "na" - which is a legit abbreviation)
+REPLACE_NA="s/\(.*\)\tn.a.\t\(.*\)/\1\t-\t\2/g";
 
 # remove all the entries that start with a dash or a single quote
 REPLACE_NONLETTER="/^[-']/d";
@@ -94,15 +97,26 @@ for ENTRY in ${ENTRIES}; do
 			# Replace UTF-8 characters with LaTeX equivalents:
 			TITLE=`echo "${TITLE}" | sed -e "${REPLACE_RULES}"`;
 			ABBRV=`echo "${ABBRV}" | sed -e "${REPLACE_RULES}"`;
+            # Non-applicable entries are exceptions to the regular rules, we define these with a
+            # \DefineJournalWordException rather than \DefineJournalAbbreviation
+            TYPE="Abbreviation";
+            if [ "${ABBRV}" = "-" ]; then
+                TYPE="WordException";
+                ABBRV="${TITLE}";
+            fi
 			# Check to see if the title ends with a dash
 			FIRST="${TITLE%?}";
 			if [ "${TITLE:${#FIRST}}" = "-" ]; then
 				# Output the "matching" entry:
 				TITLE=`echo "${TITLE}" | sed -e 's/-$//'`;
-				echo "\DefineJournalPartialAbbreviation{${TITLE}}{${ABBRV}}" >> ${OUTPUT_FILE};
+                if [ "${TYPE}" = "WordException" ]; then
+                    # we currently do not support partial exceptions, so comment them out
+                    echo -n "%" >> ${OUTPUT_FILE};
+                fi
+				echo "\DefineJournalPartial${TYPE}{${TITLE}}{${ABBRV}}" >> ${OUTPUT_FILE};
 			else
 				# Output the normal entry:
-				echo "\DefineJournalAbbreviation{${TITLE}}{${ABBRV}}" >> ${OUTPUT_FILE};
+				echo "\DefineJournal${TYPE}{${TITLE}}{${ABBRV}}" >> ${OUTPUT_FILE};
 			fi
 			break;
 		fi

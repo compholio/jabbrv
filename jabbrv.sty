@@ -83,8 +83,8 @@
 % Special if for warning when an abbreviation is not defined
 \newif\if@warn@noabbrv@ \@warn@noabbrv@false
 
-% Special if for if a partial abbreviation match was found
-\newif\if@partial@found@
+% Special if for whether an abbreviation match was found
+\newif\if@jabbrv@match@found@
 
 % Special if for handling exceptions to the abbreviation rules
 \newif\if@abbreviate@journal@
@@ -143,6 +143,7 @@
 	\let\=\journal@char@empty% macron accent
 	\let\c\journal@char@empty% cedilla
 	\let\t\journal@char@empty% tie
+	\let\u\journal@char@empty% breve
 	\let\v\journal@char@empty% caron
 	\def\~{@TILDE@}%
 	\def\aa{@RINGa@}%
@@ -155,6 +156,7 @@
 	\def\OE{@OEDIPHTHONG@}%
 	\def\ss{@ESZETT@}%
 	\def\&{@AND@}%
+	\def\textlefthalfring{@LEFTHALFRING@}%
 	% Custom \J@C may be called directly or defined through \textcommabelow:
 	\def\J@C{@JABBRVCOMMA@}%
 	\let\textcommabelow=\J@C%
@@ -176,8 +178,10 @@
 \global\let\jabbrv@OEdiphthong=\OE
 \global\let\jabbrv@eszett=\ss
 \global\let\jabbrv@tie=\t
+\global\let\jabbrv@breve=\u
 \global\let\jabbrv@caron=\v
 \global\let\jabbrv@and=\&
+\global\let\jabbrv@=\textlefthalfring
 % Custom:
 \global\let\jabbrv@comma=\J@C
 % When outputing abbreviations or un-abbreviated words the diacritic match
@@ -200,8 +204,10 @@
 	\let\OE=\jabbrv@OEdiphthong%
 	\let\ss=\jabbrv@eszett%
 	\let\t=\jabbrv@tie%
+	\let\u=\jabbrv@breve%
 	\let\v=\jabbrv@caron%
 	\let\&=\jabbrv@and%
+	\let\textlefthalfring=\jabbrv@textlefthalfring%
 	% Custom \J@C may be called directly or defined through \textcommabelow:
 	\let\J@C=\jabbrv@comma%
 	\let\textcommabelow=\jabbrv@comma%
@@ -227,6 +233,20 @@
 	\begingroup
 		\jabbrv@redefine@diacritic
 		\expandafter\gdef\csname journal@exception@#1\endcsname{%
+			\begingroup%
+				\jabbrv@normal@diacritic%
+				#2%
+			\endgroup%
+			\@gobble@space@false%
+		}
+	\endgroup
+}
+
+% Define specific journal words that are exceptions:
+\providecommand{\DefineJournalWordException}[2]{
+	\begingroup
+		\jabbrv@redefine@diacritic
+		\expandafter\gdef\csname journal@word@exception@#1\endcsname{%
 			\begingroup%
 				\jabbrv@normal@diacritic%
 				#2%
@@ -328,7 +348,6 @@
 \newcounter{jabbrv@loop@i}
 \newcounter{jabbrv@loop@max}
 \def\journal@output@abbrv@partial{%
-	\@partial@found@false%
 	\jabbrv@strlen{\the\temp@journal@text}%
 	\setcounter{jabbrv@loop@max}{\value{jabbrv@strlen@count}}%
 	\jabbrv@for@loop{jabbrv@loop@i}{0}{\value{jabbrv@loop@i} < \value{jabbrv@loop@max}}{%
@@ -336,7 +355,7 @@
 		\expandafter\ifx\csname journal@partial@abbrv@\the\temp@journal@text@\endcsname\relax%
 			% No known partial abbreviation
 		\else%
-			\@partial@found@true%
+			\@jabbrv@match@found@true%
 			\csname journal@partial@abbrv@\the\temp@journal@text@\endcsname%
 			\setcounter{jabbrv@loop@i}{\value{jabbrv@loop@max}}%
 		\fi%
@@ -362,25 +381,32 @@
 		\else%
 			\journal@output@space%
 		\fi%
+		\@jabbrv@match@found@false%
 		\expandafter\ifx\csname journal@abbrv@\the\temp@journal@text\endcsname\relax%
-			\journal@output@abbrv@partial%
-			\if@partial@found@%
-				% Partial match was output, do nothing.
+			\expandafter\ifcsname journal@word@exception@\the\temp@journal@text\endcsname%
+				\expandafter\csname journal@word@exception@\the\temp@journal@text\endcsname%
+				\@jabbrv@match@found@true%
 			\else%
-				% No known abbreviation
-				\if@warn@noabbrv@%
-					\@latex@warning{No abbreviation defined for `\the\temp@journal@text'}%
-				\fi%
-				\begingroup%
-					\jabbrv@normal@diacritic%
-					\the\temp@journal@text%
-				\endgroup%
-				\global\@end@period@false % reset the "need a period at the end" indicator
-				\@gobble@space@false%
+				\journal@output@abbrv@partial%
 			\fi%
 		\else%
 			% Replace with abbreviation
 			\expandafter\csname journal@abbrv@\the\temp@journal@text\endcsname%
+			\@jabbrv@match@found@true%
+		\fi%
+		\if@jabbrv@match@found@%
+			% A match was output, do nothing.
+		\else%
+			% No known abbreviation
+			\if@warn@noabbrv@%
+				\@latex@warning{No abbreviation defined for `\the\temp@journal@text'}%
+			\fi%
+			\begingroup%
+				\jabbrv@normal@diacritic%
+				\the\temp@journal@text%
+			\endgroup%
+			\global\@end@period@false % reset the "need a period at the end" indicator
+			\@gobble@space@false%
 		\fi%
 	\fi%
 	\@special@period@false%
