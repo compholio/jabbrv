@@ -498,10 +498,14 @@
 }
 
 % If working with biblatex then apply the journal title as a "field handler"
-\AtEndPreamble{
+\global\let\jabbrv@begin@document=\document
+\gdef\document{%
+	\endgroup%
 	\@ifpackageloaded{biblatex}{
 		\DeclareFieldInputHandler{journaltitle}{%
-			\def\NewValue{\JournalTitle{#1}}%
+			\def\NewValue{\JournalTitle{##1}}%
 		}
-	}{}
+	}{}%
+	\begingroup%
+	\jabbrv@begin@document%
 }
