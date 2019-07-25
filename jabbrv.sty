@@ -498,7 +498,7 @@
 }
 
 % If working with biblatex then apply the journal title as a "field handler"
-\AtBeginDocument{
+\AtEndPreamble{
 	\@ifpackageloaded{biblatex}{
 		\DeclareFieldInputHandler{journaltitle}{%
 			\def\NewValue{\JournalTitle{#1}}%

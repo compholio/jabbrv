@@ -1,20 +1,18 @@
 \documentclass[letterpaper,12pt]{article}
 
-% Remove ``[warnundef]'' to get rid of undefined abbreviation warnings:
-\usepackage[warnundef]{jabbrv}
-
 % compressed (numeric) citations:
 \usepackage[backend=biber, style=numeric-comp]{biblatex}
-
-% Defining a custom abbreviation:
-\DefineJournalAbbreviation{Test}{Tes} % <-- Note that there is no period!
 
 % Define custom commands used in the BibTeX file:
 \newcommand{\tjri}{Test Journal of Reference Information}
 
 \addbibresource{example.bib}
 
-\usepackage{jabbrv}
+% Remove ``[warnundef]'' to get rid of undefined abbreviation warnings:
+\usepackage[warnundef]{jabbrv}
+
+% Defining a custom abbreviation:
+\DefineJournalAbbreviation{Test}{Tes} % <-- Note that there is no period!
 
 \begin{document}
 
