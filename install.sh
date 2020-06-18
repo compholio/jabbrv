@@ -2,6 +2,7 @@
 
 FILE_FOLDER=`dirname $0`;
 FILE_NAME=`basename $0`;
+SUDO=""
 
 message() {
 	TYPE="$1";
@@ -14,14 +15,6 @@ message() {
 		echo "${TYPE}: ${MESSAGE}";
 	fi
 }
-
-# Make sure the user has the appropriate permissions
-SUDO_TEST=`sudo -n echo "test" 2> /dev/null`;
-if [ "${SUDO_TEST}" != "test" ]; then
-	message "ERROR" "Super user permissions are required to continue, instead run:";
-	message "EMERR" "sudo ./${FILE_NAME}";
-	exit;
-fi
 
 # Choose an installation folder
 if [ "$#" -gt "1" ]; then
@@ -54,13 +47,24 @@ fi
 INSTALL_LTX_FOLDER="${BASE_FOLDER}/tex/latex/jabbrv";
 INSTALL_BST_FOLDER="${BASE_FOLDER}/bibtex/bst/jabbrv";
 
+# Make sure the user has the appropriate permissions
+if [ ! -w $INSTALL_LTX_FOLDER ] || [ ! -w $INSTALL_BST_FOLDER ]; then
+	SUDO="sudo"
+	SUDO_TEST=`$SUDO -n echo "test" 2> /dev/null`;
+	if [ "${SUDO_TEST}" != "test" ]; then
+		message "ERROR" "Super user permissions are required to continue, instead run:";
+		message "EMERR" "$SUDO ./${FILE_NAME}";
+		exit;
+	fi
+fi
+
 # Copy installation files
 FOLDER=`cd ${FILE_FOLDER}/; pwd`;
-sudo mkdir -p "${INSTALL_LTX_FOLDER}";
-sudo mkdir -p "${INSTALL_BST_FOLDER}";
-sudo cp "${FOLDER}/"*.sty "${INSTALL_LTX_FOLDER}/";
-sudo cp "${FOLDER}/"*.ldf "${INSTALL_LTX_FOLDER}/";
-sudo cp "${FOLDER}/"*.bst "${INSTALL_BST_FOLDER}/";
+$SUDO mkdir -p "${INSTALL_LTX_FOLDER}";
+$SUDO mkdir -p "${INSTALL_BST_FOLDER}";
+$SUDO cp "${FOLDER}/"*.sty "${INSTALL_LTX_FOLDER}/";
+$SUDO cp "${FOLDER}/"*.ldf "${INSTALL_LTX_FOLDER}/";
+$SUDO cp "${FOLDER}/"*.bst "${INSTALL_BST_FOLDER}/";
 
 # Update the package list
 sudo ${HASH_UPDATER};
