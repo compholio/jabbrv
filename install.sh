@@ -24,16 +24,19 @@ elif [ "$#" -eq "1" ]; then
 	BASE_FOLDER="$1";
 	echo "using custom folder: ${BASE_FOLDER}";
 else
-	if [ -d "/usr/share/texmf-texlive" ]; then
-		BASE_FOLDER="/usr/local/share/texmf";
-	else
-		BASE_FOLDER="/usr/local/texlive";
-		if [ ! -d "${BASE_FOLDER}" ]; then
-			BASE_FOLDER="${HOME}/Library/texmf";
-		else
-			message "ERROR" "Could not find a LaTeX installation folder, you're likely running an unhandled LaTeX distribution.";
-			exit;
-		fi
+	TEX_FOLDER="/usr/share/texmf-texlive"
+	BASE_FOLDER="/usr/local/share/texmf"
+	if [ ! -d "${TEX_FOLDER}" ]; then
+		TEX_FOLDER="/Library/TeX"
+		BASE_FOLDER="${HOME}/Library/texmf"
+	fi
+	if [ ! -d "${TEX_FOLDER}" ]; then
+		TEX_FOLDER="/usr/local/texlive";
+		BASE_FOLDER="${TEX_FOLDER}";
+	fi
+	if [ ! -d "${TEX_FOLDER}" ]; then
+		message "ERROR" "Could not find a LaTeX installation folder, you're likely running an unhandled LaTeX distribution."
+		exit
 	fi
 fi
 
