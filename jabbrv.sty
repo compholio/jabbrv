@@ -526,14 +526,24 @@
 }
 
 % If working with biblatex then apply the journal title as a "field handler"
-\global\let\jabbrv@begin@document=\document
-\gdef\document{%
-	\endgroup%
-	\@ifpackageloaded{biblatex}{
-		\DeclareFieldInputHandler{journaltitle}{%
-			\def\NewValue{\JournalTitle{##1}}%
-		}
-	}{}%
-	\begingroup%
-	\jabbrv@begin@document%
+\@ifl@t@r\fmtversion{2020-10-01}{%
+    \AddToHook{begindocument/before}{%
+        \@ifpackageloaded{biblatex}{%
+	        \DeclareFieldInputHandler{journaltitle}{%
+		        \def\NewValue{\JournalTitle{#1}}%
+	        }%
+        }{}%
+    }%
+}{%
+    \global\let\jabbrv@begin@document=\document%
+    \gdef\document{%
+        \endgroup%
+        \@ifpackageloaded{biblatex}{%
+	        \DeclareFieldInputHandler{journaltitle}{%
+		        \def\NewValue{\JournalTitle{##1}}%
+	        }%
+        }{}%
+        \begingroup%
+        \jabbrv@begin@document%
+    }%
 }
