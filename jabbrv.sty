@@ -157,6 +157,7 @@
 	\def\ss{@ESZETT@}%
 	\def\&{@AND@}%
 	\def\textlefthalfring{@LEFTHALFRING@}%
+	\def\slash{/}%
 	% Custom \J@C may be called directly or defined through \textcommabelow:
 	\def\J@C{@JABBRVCOMMA@}%
 	\let\textcommabelow=\J@C%
@@ -182,6 +183,7 @@
 \global\let\jabbrv@caron=\v
 \global\let\jabbrv@and=\&
 \global\let\jabbrv@=\textlefthalfring
+\global\let\jabbrv@slash=\slash
 % Custom:
 \global\let\jabbrv@comma=\J@C
 % When outputing abbreviations or un-abbreviated words the diacritic match
@@ -208,6 +210,7 @@
 	\let\v=\jabbrv@caron%
 	\let\&=\jabbrv@and%
 	\let\textlefthalfring=\jabbrv@textlefthalfring%
+	\let\slash=\jabbrv@slash%
 	% Custom \J@C may be called directly or defined through \textcommabelow:
 	\let\J@C=\jabbrv@comma%
 	\let\textcommabelow=\jabbrv@comma%
