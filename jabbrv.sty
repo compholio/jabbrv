@@ -90,8 +90,7 @@
 \newif\if@abbreviate@journal@
 
 % Special if for handling non-breaking spaces and slashes
-\newif\if@jabbrv@nbsp@
-\newif\if@jabbrv@slash@
+\newif\if@jabbrv@special@sep@
 
 % Special if for abbreviating when a title only contains one word
 \newif\if@jabbrv@abbrv@one@word@title@ \@jabbrv@abbrv@one@word@title@false
@@ -219,13 +218,16 @@
 \def\jabbrv@nbsp{@NBSP@}
 \def\jabbrv@slash{@SLASH@}
 \def\jabbrv@space{@SPACE@}
+\def\jabbrv@underscore{@UNDERSCORE@}
 \def\jabbrv@redefine@special{%
 	\let~=\jabbrv@nbsp%
 	\let\slash=\jabbrv@slash%
 	\let\ =\jabbrv@space%
+	\let\_=\jabbrv@underscore%
 }
 \global\let\jabbrv@slash@orig=\slash
 \global\let\jabbrv@space@orig=\ 
+\global\let\jabbrv@underscore@orig=\_
 
 % Define Common Abbreviations (see language definition files for the list):
 \providecommand{\DefineJournalAbbreviation}[2]{
@@ -380,15 +382,11 @@
 \def\journal@output@space{%
 	\if@gobble@space@%
 	\else%
-		\if@jabbrv@nbsp@%
-			\@jabbrv@nbsp@false%
-			\leavevmode\nobreak\space%
-		\else\if@jabbrv@slash@%
-			\@jabbrv@slash@false%
-			\jabbrv@slash@orig%
+		\if@jabbrv@special@sep@%
+			\@jabbrv@special@sep@false%
 		\else%
 			\space%
-		\fi\fi%
+		\fi%
 		\@gobble@space@true%
 	\fi%
 }
@@ -467,12 +465,18 @@
 		\@journal@word@sep%
 	% Capture the non-breaking space and treat it similar to a regular space
 	\else\ifx \jabbrv@nbsp\@jrnl@temp@char%
-		\@jabbrv@nbsp@true%
 		\@journal@word@sep%
+		\@jabbrv@special@sep@true%
+		\leavevmode\nobreak\space% {\nobreakspace}
+	\else\ifx \jabbrv@underscore\@jrnl@temp@char%
+		\@journal@word@sep%
+		\@jabbrv@special@sep@true%
+		\jabbrv@underscore@orig%
 	% Capture the slash and treat it as a word separator
 	\else\ifx \jabbrv@slash\@jrnl@temp@char%
-		\@jabbrv@slash@true%
 		\@journal@word@sep%
+		\@jabbrv@special@sep@true%
+		\jabbrv@slash@orig%
 	\else%
 		% \journal@char@stop is specially defined so this routine knows
 		% when the entire text has been read (where to stop)
@@ -488,7 +492,7 @@
 			\@special@period@false%
 			\let\@tempa\@journal@character%
 		\fi%
-	\fi\fi\fi\fi\fi%
+	\fi\fi\fi\fi\fi\fi%
 	\@tempa%
 }
 
