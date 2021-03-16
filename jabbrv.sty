@@ -89,8 +89,9 @@
 % Special if for handling exceptions to the abbreviation rules
 \newif\if@abbreviate@journal@
 
-% Special if for handling non-breaking spaces
+% Special if for handling non-breaking spaces and slashes
 \newif\if@jabbrv@nbsp@
+\newif\if@jabbrv@slash@
 
 % Special if for abbreviating when a title only contains one word
 \newif\if@jabbrv@abbrv@one@word@title@ \@jabbrv@abbrv@one@word@title@false
@@ -160,7 +161,6 @@
 	\def\ss{@ESZETT@}%
 	\def\&{@AND@}%
 	\def\textlefthalfring{@LEFTHALFRING@}%
-	\def\slash{/}%
 	% Custom \J@C may be called directly or defined through \textcommabelow:
 	\def\J@C{@JABBRVCOMMA@}%
 	\let\textcommabelow=\J@C%
@@ -186,7 +186,6 @@
 \global\let\jabbrv@caron=\v
 \global\let\jabbrv@and=\&
 \global\let\jabbrv@=\textlefthalfring
-\global\let\jabbrv@slash=\slash
 % Custom:
 \global\let\jabbrv@comma=\J@C
 % When outputing abbreviations or un-abbreviated words the diacritic match
@@ -213,16 +212,18 @@
 	\let\v=\jabbrv@caron%
 	\let\&=\jabbrv@and%
 	\let\textlefthalfring=\jabbrv@textlefthalfring%
-	\let\slash=\jabbrv@slash%
 	% Custom \J@C may be called directly or defined through \textcommabelow:
 	\let\J@C=\jabbrv@comma%
 	\let\textcommabelow=\jabbrv@comma%
 }
 \def\jabbrv@nbsp{@NBSP@}
+\def\jabbrv@slash{@SLASH@}
 \def\jabbrv@redefine@special{%
-	\let~=\jabbrv@nbsp
+	\let~=\jabbrv@nbsp%
+	\let\slash=\jabbrv@slash%
 }
 \global\let\jabbrv@nbsp@orig=~
+\global\let\jabbrv@slash@orig=\slash
 
 % Define Common Abbreviations (see language definition files for the list):
 \providecommand{\DefineJournalAbbreviation}[2]{
@@ -380,9 +381,12 @@
 		\if@jabbrv@nbsp@%
 			\@jabbrv@nbsp@false%
 			\jabbrv@nbsp@orig%
+		\else\if@jabbrv@slash@%
+			\@jabbrv@slash@false%
+			\jabbrv@slash@orig%
 		\else%
 			\space%
-		\fi%
+		\fi\fi%
 		\@gobble@space@true%
 	\fi%
 }
@@ -437,11 +441,16 @@
 	\addtocounter{jabbrv@word@count}{1}%
 }
 
+\def\@journal@group#1{\journal@char@loop#1}
+
 % Loop through the \futurelet characters finding title words to replace
 \def\journal@char@loop@{%
+	% remove the group ({}) wrapping around whatever commands are within it
+	\ifx\bgroup\@jrnl@temp@char%
+		\let\@tempa\@journal@group%
 	% The space character is the ``special token'' - use this character to find
 	% title words to abbreviate
-	\ifx \@sptoken\@jrnl@temp@char%
+	\else\ifx \@sptoken\@jrnl@temp@char%
 		\journal@output@abbrv%
 		\jabbrv@step@word@count%
 		\temp@journal@text{}%
@@ -454,6 +463,14 @@
 		\temp@journal@text{}%
 		\@no@space@false%
 		\@jabbrv@nbsp@true%
+		\let\@tempa\@journal@space%
+	% Capture the slash and treat it as a word separator
+	\else\ifx \jabbrv@slash\@jrnl@temp@char%
+		\journal@output@abbrv%
+		\jabbrv@step@word@count%
+		\temp@journal@text{}%
+		\@no@space@false%
+		\@jabbrv@slash@true%
 		\let\@tempa\@journal@space%
 	\else%
 		% \journal@char@stop is specially defined so this routine knows
@@ -470,7 +487,7 @@
 			\@special@period@false%
 			\let\@tempa\@journal@character%
 		\fi%
-	\fi\fi%
+	\fi\fi\fi\fi%
 	\@tempa%
 }
 
