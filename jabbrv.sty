@@ -348,16 +348,33 @@
 	\temp@journal@text@{}%
 	\expandafter\jabbrv@gobble@ending@ #1\jabbrv@gobble@stop%
 }
-\def\jabbrv@gobble@ending@#1{%
+
+\def\jabbrv@gobble@ending@{%
+	\futurelet\@jrnl@gobble@char%
+	\jabbrv@gobble@ending@@%
+}
+
+\def\jabbrv@gobble@ending@character#1{%
 	\expandafter\ifnum\value{jabbrv@gobble@temp} > 0\relax%
 		\temp@journal@text@\expandafter{\the\temp@journal@text@#1}%
 	\fi%
-	\@ifnextchar\jabbrv@gobble@stop%
-	{}%
-	{%
-		\addtocounter{jabbrv@gobble@temp}{-1}%
-		\expandafter\jabbrv@gobble@ending@%
-	}%
+	\jabbrv@gobble@ending@%
+}
+
+\def\jabbrv@gobble@ending@character@#1{%
+	\jabbrv@gobble@ending@%
+}
+
+\def\jabbrv@gobble@ending@@{%
+	\addtocounter{jabbrv@gobble@temp}{-1}%
+	\ifx \jabbrv@gobble@stop\@jrnl@gobble@char%
+		\let\@tempa\@gobble%
+	\else\ifcat\noexpand\@jrnl@gobble@char\relax%
+		\let\@tempa\jabbrv@gobble@ending@character@%
+	\else%
+		\let\@tempa\jabbrv@gobble@ending@character%
+	\fi\fi%
+	\@tempa%
 }
 
 % Find partial title word matches
