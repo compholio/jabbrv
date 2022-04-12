@@ -344,6 +344,7 @@
 \def\jabbrv@gobble@stop{}
 \def\jabbrv@gobble@ending#1#2#3{%
 	\setcounter{jabbrv@gobble@temp}{#3}%
+	\addtocounter{jabbrv@gobble@temp}{+1}%
 	\addtocounter{jabbrv@gobble@temp}{-#2}%
 	\temp@journal@text@{}%
 	\expandafter\jabbrv@gobble@ending@ #1\jabbrv@gobble@stop%
