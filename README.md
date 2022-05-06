@@ -57,6 +57,10 @@ The preamble may be modified by choosing "Settings" from the "Documents" menu an
 
 Simply copy all jabbrv files into the document folder and add `\usepackage{jabbrv}` to the preamble.  See the [Automatic Journal Abbreviations Template](https://www.overleaf.com/latex/templates/automatic-journal-abbreviations/mxfsdscmvxcr) for an example.
 
+## BibLaTeX Notes
+
+jabbrv is also compatible with BibLaTeX, just add `\usepackage{jabbrv}` to your preamble and use `\addbibresource{file.bib}` and `\printbibliography` like normal.  For an example, take a look at `biblatex-example.tex`.
+
 # Upgrading
 
 Should the current version of the package not suite your needs, it is easy to upgrade to a new version without changing your document. Simply download the new version of the package and extract the style file (jabbrv.sty) and the language definition files (`*.ldf`), replacing the files from your existing version.
