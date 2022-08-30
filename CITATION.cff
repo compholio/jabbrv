@@ -1,0 +1,8 @@
+cff-version: 1.2.0
+message: "If you cite this software, please cite it as below."
+authors:
+- family-names: "Hoover"
+  given-names: "Erich"
+title: "jabbrv"
+date-released: 2014-01-21
+url: "https://github.com/compholio/jabbrv"
