@@ -516,17 +516,23 @@
 }
 
 % Eat a period at the end of the entry if the next character is also a period
-\def\@jrnl@eat@period#1{%
+\def\@jrnl@eat@period{%
+    \futurelet\@jrnl@eat@period@char%
+    \@jrnl@eat@period@%
+}
+\def\@jrnl@eat@period@{%
+    \let\@tempa\@jrnl@eat@period@char%
+	\ifx\bgroup\@jrnl@eat@period@char% fix \JournalTitle{} followed by nothing (new paragraph)
+        \def\@tempa{}%
+    \fi%
 	\if@end@period@%
-		\ifx.#1\else%
-			\ifx\newblock#1%
-				.\newblock%
-			\else%
-				\journal@abbrv@period@period%
-			\fi%
+		\ifx.\@jrnl@eat@period@char%
+            \def\@tempa{}% eat period
+        \else%
+			\def\@tempa{\journal@abbrv@period@period}%
 		\fi%
 	\fi%
-	#1%
+    \@tempa%
 }
 
 % Skip groups after the \JournalTitle command
