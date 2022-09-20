@@ -217,6 +217,8 @@
 }
 \def\jabbrv@nbsp{@NBSP@}
 \def\jabbrv@slash{@SLASH@}
+\def\jabbrv@openparen{@OPENPAREN@}
+\def\jabbrv@closeparen{@CLOSEPAREN@}
 \def\jabbrv@space{@SPACE@}
 \def\jabbrv@underscore{@UNDERSCORE@}
 \def\jabbrv@redefine@special{%
@@ -225,9 +227,25 @@
 	\let\ =\jabbrv@space%
 	\let\_=\jabbrv@underscore%
 }
+\catcode`\(=\active
+\catcode`\)=\active
+\def\jabbrv@redefine@extra@special{%
+	\catcode`\(=\active%
+	\catcode`\)=\active%
+	\let(=\jabbrv@openparen%
+	\let)=\jabbrv@closeparen%
+}
+\def\jabbrv@redefine@extra@special@{%
+	\catcode`\(11\relax%
+	\catcode`\)11\relax%
+}
+\catcode`\(11\relax
+\catcode`\)11\relax
 \global\let\jabbrv@slash@orig=\slash
 \global\let\jabbrv@space@orig=\ 
 \global\let\jabbrv@underscore@orig=\_
+\global\let\jabbrv@openparen@orig=(
+\global\let\jabbrv@closeparen@orig=)
 
 % Define Common Abbreviations (see language definition files for the list):
 \providecommand{\DefineJournalAbbreviation}[2]{
@@ -501,6 +519,16 @@
 		\@journal@word@sep%
 		\@jabbrv@special@sep@true%
 		\jabbrv@slash@orig%
+	% Capture open parenthesis and treat it as a word separator
+	\else\ifx \jabbrv@openparen\@jrnl@temp@char%
+		\@journal@word@sep%
+		\@jabbrv@special@sep@true%
+		\jabbrv@openparen@orig%
+	% Capture close parenthesis and treat it as a word separator
+	\else\ifx \jabbrv@closeparen\@jrnl@temp@char%
+		\@journal@word@sep%
+		\@jabbrv@special@sep@true%
+		\jabbrv@closeparen@orig%
 	\else%
 		% \journal@char@stop is specially defined so this routine knows
 		% when the entire text has been read (where to stop)
@@ -516,7 +544,10 @@
 			\@special@period@false%
 			\let\@tempa\@journal@character%
 		\fi%
-	\fi\fi\fi\fi\fi\fi%
+	\fi% else
+	\fi% \jabbrv@closeparen
+	\fi% \jabbrv@openparen
+	\fi\fi\fi\fi\fi%
 	\@tempa%
 }
 
@@ -552,7 +583,12 @@
 
 % Call \journal{<title>}, where <title> is the title for which
 % journal abbreviation replacements should be performed.
-\providecommand{\JournalTitle}[1]{%
+\def\JournalTitle{%
+	\jabbrv@redefine@extra@special%
+	\JournalTitle@%
+}
+\def\JournalTitle@#1{%
+	\jabbrv@redefine@extra@special@%
 	\@abbreviate@journal@true%
 	\global\@end@period@false%
 	\begingroup%
