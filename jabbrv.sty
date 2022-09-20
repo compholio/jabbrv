@@ -309,10 +309,6 @@
 \providecommand{\DefineSpuriousJournalWord}[1]{%
 	\expandafter\def\csname journal@abbrv@#1\endcsname{\journal@output@space}%
 }
-\DefineSpuriousJournalWord{of}
-\DefineSpuriousJournalWord{in}
-\DefineSpuriousJournalWord{and}
-\DefineSpuriousJournalWord{the}
 
 % Handle the rather generic \futurelet code:
 \newtoks\temp@journal@text
@@ -638,6 +634,14 @@
 \InputIfFileExists{jabbrv-ltwa-\jabbrv@lang.ldf}{}{%
 	\@latex@error{Abbreviation language `jabbrv-ltwa-\jabbrv@lang.ldf' not found}{Select a valid language and recompile.}%
 }
+
+\def\jabbrv@lang@spurious@en{
+    \DefineSpuriousJournalWord{of}
+    \DefineSpuriousJournalWord{in}
+    \DefineSpuriousJournalWord{and}
+    \DefineSpuriousJournalWord{the}
+}
+\csname jabbrv@lang@spurious@\jabbrv@lang\endcsname
 
 % If working with biblatex then apply the journal title as a "field handler"
 \@ifl@t@r\fmtversion{2020-10-01}{%
