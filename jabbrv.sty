@@ -317,8 +317,13 @@
 \newcounter{jabbrv@strlen@count}
 \def\jabbrv@strlen@stop{}
 \def\jabbrv@strlen#1{%
-	\setcounter{jabbrv@strlen@count}{1}%
-	\expandafter\jabbrv@strlen@ #1\jabbrv@strlen@stop%
+	\edef\1{#1}%
+	\ifx \1\empty%
+		\setcounter{jabbrv@strlen@count}{0}%
+	\else%
+		\setcounter{jabbrv@strlen@count}{1}%
+		\expandafter\jabbrv@strlen@ #1\jabbrv@strlen@stop%
+	\fi%
 }
 \def\jabbrv@strlen@#1{%
 	\@ifnextchar\jabbrv@strlen@stop%
