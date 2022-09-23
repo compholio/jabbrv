@@ -48,15 +48,18 @@
 %% sets the abbreviation language to Spanish.
 %% 
 %% In order to add customize abbreviations this package provides
-%% three additional commands: \DefineJournalAbbreviation, 
-%% \DefineJournalPartialAbbreviation and \DefineSpuriousJournalWord.
-%% \DefineSpuriousJournalWord simply takes a single case-sensitive
-%% parameter, this parameter will be added to the list of words to
-%% completely remove in the output. \DefineJournalAbbreviation takes
+%% four additional commands:
+%%   \DefineJournalAbbreviation
+%%   \DefineJournalPartialAbbreviation
+%%   \DefineSpuriousJournalWord
+%%   \DefineSpuriousJournalPrefix
+%% 
+%% \DefineJournalAbbreviation takes
 %% two parameters, the first parameter is the case-sensitive word to
 %% abbreviate and the second parameter is the actual abbreviation,
 %% for example:
 %%   \DefineJournalAbbreviation{Journal}{J}
+%% 
 %% \DefineJournalPartialAbbreviation takes two
 %% parameters juts like \DefineJournalAbbreviation; however,
 %% \DefineJournalPartialAbbreviation creates an entry that matches
@@ -68,9 +71,16 @@
 %% abbreviations, as such abbreviations that are not approved by 
 %% the ISSN may match unintended title words.
 %% 
-%% Please note that this package is still very much in the beta
-%% stage, while it should work just fine it has not yet been
-%% extensively tested.
+%% \DefineSpuriousJournalWord simply takes a single case-sensitive
+%% parameter, this parameter will be added to the list of words to
+%% completely remove in the output.
+%% 
+%% \DefineSpuriousJournalPrefix takes a single case-sensitive
+%% parameter, this parameter will be added to a list that is checked
+%% before processing any title words to remove that prefix before
+%% checking the word.  For example, in French the prefix "d'" should
+%% be removed when processing "d'agriculture" and result in the
+%% abbreviation "d'agric".
 %% 
 \NeedsTeXFormat{LaTeX2e}[1995/06/01]
 \ProvidesPackage{jabbrv}[2010/08/18 v0.2
@@ -310,6 +320,14 @@
 	\expandafter\def\csname journal@abbrv@#1\endcsname{\journal@output@space}%
 }
 
+% Define Suprious Prefix Removal:
+\newcounter{jabbrv@prefix@count}
+\setcounter{jabbrv@prefix@count}{0}%
+\providecommand{\DefineSpuriousJournalPrefix}[1]{%
+	\expandafter\def\csname journal@prefix@\the\value{jabbrv@prefix@count}\endcsname{#1}%
+	\addtocounter{jabbrv@prefix@count}{1}%
+}
+
 % Handle the rather generic \futurelet code:
 \newtoks\temp@journal@text
 \newtoks\temp@journal@text@
@@ -397,6 +415,58 @@
 	\@tempa%
 }
 
+% Gobble a given number of characters off the beginning of a string
+\def\jabbrv@gobble@beginning#1#2{%
+	\setcounter{jabbrv@gobble@temp}{#2}%
+	\addtocounter{jabbrv@gobble@temp}{+1}%
+	\temp@journal@text@{}%
+	\expandafter\jabbrv@gobble@beginning@ #1\jabbrv@gobble@stop%
+}
+\def\jabbrv@gobble@beginning@{%
+	\futurelet\@jrnl@gobble@char%
+	\jabbrv@gobble@beginning@@%
+}
+\def\jabbrv@gobble@beginning@character#1{%
+	\expandafter\ifnum\value{jabbrv@gobble@temp} > 0\relax\else%
+		\temp@journal@text@\expandafter{\the\temp@journal@text@#1}%
+	\fi%
+	\jabbrv@gobble@beginning@%
+}
+\def\jabbrv@gobble@beginning@character@#1{%
+	\jabbrv@gobble@beginning@%
+}
+\def\jabbrv@gobble@beginning@@{%
+	\addtocounter{jabbrv@gobble@temp}{-1}%
+	\ifx \jabbrv@gobble@stop\@jrnl@gobble@char%
+		\let\@tempa\@gobble%
+	\else\ifcat\noexpand\@jrnl@gobble@char\relax%
+		\let\@tempa\jabbrv@gobble@beginning@character@%
+	\else%
+		\let\@tempa\jabbrv@gobble@beginning@character%
+	\fi\fi%
+	\@tempa%
+}
+
+% Gobble any recognized prefix off the beginning of a title word
+\def\jabbrv@gobble@prefix{%
+	% loop over the list of prefixes
+	\setcounter{jabbrv@loop@max}{\value{jabbrv@prefix@count}}%
+	\jabbrv@for@loop{jabbrv@loop@i}{0}{\value{jabbrv@loop@i} < \value{jabbrv@loop@max}}{%
+		\edef\jabbrv@loop@prefix{\csname journal@prefix@\the\value{jabbrv@loop@i}\endcsname}%
+		\jabbrv@strlen{\jabbrv@loop@prefix}%
+		% truncate the title word to the length of the prefix we are testing
+		\jabbrv@gobble@ending{\the\temp@journal@text}{0}{\value{jabbrv@strlen@count}}%
+		\edef\temp@journal@text@@{\the\temp@journal@text@}%
+		% check and see if the prefix matches
+		\ifx\temp@journal@text@@\jabbrv@loop@prefix\relax%
+			% if we have a match then remove the prefix from the title word and exit the loop
+			\jabbrv@gobble@beginning{\the\temp@journal@text}{\the\value{jabbrv@strlen@count}}%
+			\setcounter{jabbrv@loop@i}{\value{jabbrv@loop@max}}%
+			\temp@journal@text\expandafter{\the\temp@journal@text@}%
+		\fi%
+	}%
+}
+
 % Find partial title word matches
 \newcounter{jabbrv@loop@i}
 \newcounter{jabbrv@loop@max}
@@ -439,6 +509,7 @@
 			\journal@output@space%
 		\fi%
 		\@jabbrv@match@found@false%
+		\jabbrv@gobble@prefix%
 		\expandafter\ifx\csname journal@abbrv@\the\temp@journal@text\endcsname\relax%
 			\expandafter\ifcsname journal@word@exception@\the\temp@journal@text\endcsname%
 				\expandafter\csname journal@word@exception@\the\temp@journal@text\endcsname%
@@ -640,6 +711,9 @@
     \DefineSpuriousJournalWord{in}
     \DefineSpuriousJournalWord{and}
     \DefineSpuriousJournalWord{the}
+}
+\def\jabbrv@lang@spurious@fr{
+    \DefineSpuriousJournalPrefix{d'}
 }
 \csname jabbrv@lang@spurious@\jabbrv@lang\endcsname
 
