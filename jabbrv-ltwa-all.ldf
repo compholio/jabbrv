@@ -501,6 +501,7 @@
 \DefineJournalPartialAbbreviation{G\'eod\'es}{G\'eod}
 \DefineJournalPartialAbbreviation{Geodet}{G\'eod}
 \DefineJournalAbbreviation{Geoindustria}{Geoind}
+\DefineJournalAbbreviation{Geoinformation}{Geoinf}
 \DefineJournalPartialAbbreviation{Geolog}{Geol}
 \DefineJournalPartialAbbreviation{Geomagneti}{Geomagn}
 \DefineJournalAbbreviation{Geomathematic}{Geomath}
